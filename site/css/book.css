@@ -7,7 +7,7 @@ body {
 }
 
 main {
-    padding-top: 4em;
+    padding-top: 2em;
     font-size: 26pt;
     font-family: 'Bilbo Swash Caps', cursive;
 }
@@ -33,10 +33,95 @@ main {
 .leftpage {
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+
 }
 
 .rightpage {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+
+.desktop{
+  display: flex;
+}
+.whisky{
+  align-self: flex-start;
+}
+
+.inkpen{
+  align-self: flex-end;
+}
+
+.leftpage form{
+  display: flex;
+  flex-direction: column;
+}
+.leftpage form input{
+  width: 90%;
+  margin: 10px auto;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+}
+.leftpage form input[type="submit"]{
+  width: auto;
+  margin-left: 5%;
+  background-color: white;
+}
+
+.rightpage h3{
+  margin:0;
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+.containerRightpage{
+  display: flex;
+  flex-direction: column;
+}
+.containerRightpage div{
+  display: flex;
+  justify-content: flex-end;
+}
+.containerRightpage div p{
+  margin-bottom:4px;
+  margin-top: 0;
+}
+.containerRightpage div :first-child{
+  text-align: end;
+}
+.containerRightpage div :nth-child(2){
+  width: 130px;
+  text-align: end;
+}
+#border{
+  border-top: 1px solid black;
+}
+
+@media screen and (max-width: 1200px) {
+  .inkpen{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .whisky{
+    display: none;
+  }
+
+  .desktop{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .pages{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .rightpage , .leftpage{
+    width: 100%;
+  }
 }
