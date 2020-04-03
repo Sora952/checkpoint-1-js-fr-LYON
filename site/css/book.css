@@ -41,12 +41,12 @@ main {
     overflow: auto;
 }
 
-@media only screen and (min-width: 1200px){
-    .desktop {
-        display: flex;
-        justify-content: space-between;
-    }
-    
+.desktop {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 1200px){    
     aside.left {
         align-self: flex-start;
     }
@@ -54,4 +54,11 @@ main {
     aside.right {
         align-self: flex-end;
     }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1199px){
+    aside.right {
+        display: none;
+    }
+
 }
