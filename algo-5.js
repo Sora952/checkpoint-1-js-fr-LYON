@@ -31,7 +31,17 @@ const scores = [
 ];
 
 function getPoints(array) {
-  // Your code here !
+  let output=0;
+  for (i=0 ; i < array.length ; i++){
+    let score = array[i].split(':');
+    if (score[0] > score[1]){
+      output += 3;
+    }
+    else if (score[0] === score[1]){
+      output++;
+    }
+  }
+  return output;
 }
 
 console.log(getPoints(scores));

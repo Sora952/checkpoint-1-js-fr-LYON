@@ -13,5 +13,39 @@ sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ) doit renvoyer ["4", "11", "
 */
 
 function sumArr(arrayA, arrayB) {
-  // Your code here !
+  let output=[];
+  if ( arrayA.length >= arrayB.length ){
+    for (i=0 ; i < arrayA.length ; i++){
+      if (arrayB[i] === undefined){
+        const nb = parseInt(arrayA[i], 10);
+        const str = nb.toString();
+        output.push(str);
+      }
+      else{
+        const nb = parseInt(arrayA[i], 10) + parseInt(arrayB[i], 10);
+        const str = nb.toString();
+        output.push(str);
+      }
+    }
+  }
+  else {
+    for (i=0 ; i < arrayB.length ; i++){
+      if (arrayA[i] === undefined){
+        const nb = parseInt(arrayB[i], 10);
+        const str = nb.toString();
+        output.push(str);
+      }
+      else{
+        const nb = parseInt(arrayA[i], 10) + parseInt(arrayB[i], 10);
+        const str = nb.toString();
+        output.push(str);
+      }
+    }
+  }
+  return(output);
 }
+
+console.log(sumArr( ["1", "2", "3"], ["2", "4", "1"] ));
+console.log(sumArr( ["2", "7", "3"], ["2", "4", "9"] ));
+console.log(sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ));
+console.log(sumArr( ["2", "4", "9"], ["4", "7", "3", "8", "2"] ));
