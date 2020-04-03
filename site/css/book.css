@@ -110,9 +110,11 @@ th {
 
 @media screen and (max-width : 800px) {
     .pages {
-        display: block;
+    display: flex;
+    flex-direction: column-reverse;
     }
     .page {
         margin: auto;
+        width: 100%;
     }
 }
