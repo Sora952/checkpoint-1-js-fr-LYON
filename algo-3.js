@@ -1,10 +1,10 @@
 /*
 Un employé de théatre voudrait afficher la liste de tous les sièges présents dans sa salle principale.
-Dans la salle les sièges sont répartis de la manière suivantes : 
+Dans la salle les sièges sont répartis de la manière suivantes:
   - Il y a 26 colonnes de sièges, numérotés de "1" à "26"
   - Chaque colonne contient 100 sièges, numérotés de "1" à "100"
-Au final la liste devra ressembler à : 
-1-1 
+Au final la liste devra ressembler à :
+1-1
 1-2
 1-3
 .
@@ -16,8 +16,18 @@ Au final la liste devra ressembler à :
 
 */
 
-function theaterSieges() {
-  // Your code here !
+function theaterSieges () {
+  const result = [];
+  const row = [];
+  for (let i = 0; i < 26; i++) {
+    const rowNb = i;
+    row.push(`${rowNb + 1}`);
+    for (let j = 0; j < 100; j++) {
+      const columnNb = j;
+      result.push(`${row[i]}-${columnNb + 1}`);
+    }
+  }
+  return result;
 }
 
 console.log(theaterSieges());
