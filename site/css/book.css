@@ -29,7 +29,6 @@ main {
     width: auto;
     flex-basis : 65%;
     margin:1em;
-    border: 3px solid red;
 }
 
 .page {
@@ -37,7 +36,6 @@ main {
     padding: 3vw;
     width: 50%;
     background-blend-mode: multiply;
-    border: 3px solid blue;
 
 }
 

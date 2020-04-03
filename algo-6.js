@@ -22,7 +22,6 @@ function sumEqualLengthArray (arr1,arr2) {
 function sumArr(arrayA, arrayB) {
   // Your code here !
   let outputArray = [];
-  let result = []
   let alength = arrayA.length;
   let blength = arrayB.length;
 
@@ -31,6 +30,7 @@ function sumArr(arrayA, arrayB) {
   }
 
   else if (blength < alength) {
+
     let aSliceArray = arrayA.slice(0, blength); 
     outputArray = sumEqualLengthArray(aSliceArray,arrayB)
     let restOfAArray = arrayA.slice(blength)
@@ -47,4 +47,4 @@ function sumArr(arrayA, arrayB) {
     return outputArray
   }
 }
-console.log(sumArr(arrB,arrA))
+console.log(sumArr(arrA,arrB))
