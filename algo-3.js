@@ -17,7 +17,13 @@ Au final la liste devra ressembler à :
 */
 
 function theaterSieges() {
-  // Your code here !
-}
+  const listeSiege = []
 
-console.log(theaterSieges());
+  for (let colSiege = 1; colSiege <= 26; colSiege++) {
+    for (let siege = 1; siege <= 100; siege++) {
+      listeSiege.push(`${colSiege} - ${siege}`)
+    }
+  }
+
+  return listeSiege.join("\n")
+}

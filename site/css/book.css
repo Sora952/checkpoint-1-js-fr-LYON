@@ -8,12 +8,21 @@ body {
 
 main {
     padding-top: 4em;
-    font-size: 26pt;
+    font-size: 20px;
     font-family: 'Bilbo Swash Caps', cursive;
+}
+
+.desktop {
+    display: flex;
+    align-items: flex-start;
 }
 
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
+}
+
+.whisky {
+    cursor:pointer;
 }
 
 .pages {
@@ -30,6 +39,10 @@ main {
     background-blend-mode: multiply;
 }
 
+h2 {
+    font-weight: normal;
+}
+
 .leftpage {
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
@@ -39,4 +52,67 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+
+.rightpage h2 {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+
+#payment,
+#name{
+width: 80%;
+}
+
+input[type="submit"] {
+    background-color:#fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius:5px;
+    margin-top:1rem;
+}
+
+table {
+    margin: auto;
+    text-align: right;
+    width: 100%;
+    font-size: 2.7vh;
+}
+
+th {
+    font-weight: normal;
+}
+
+.border-total {
+    border-top: #000 solid 0.5px;
+}
+
+@media screen and (max-width : 1100px) {
+    .inkpen {
+        display:none;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    .whisky {
+        display:none;
+    }
+    .pages {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .pages {
+        display: block;
+    }
+    .page {
+        margin: auto;
+    }
 }

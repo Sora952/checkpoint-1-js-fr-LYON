@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/book.css">
     <title>Checkpoint Javascript 1</title>
+    <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
@@ -22,16 +23,68 @@
     <main class="container">
 
         <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+            <img onclick="emptyGlass()" src="image/whisky.png" alt="a whisky glass" id="whiskyGlass" class="whisky" />
 
             <div class="pages">
                 <div class="page leftpage">
                     Add a bribe
-                    <!-- TODO : Form -->
+                    <form>
+                        <label for="name">Name</label><br>
+                        <input type="text" id="name"><br>
+                        <label for="payment">Payment</label><br>
+                        <input type="number" id="payment" min="1" max="10"><br>
+                        <input type="submit" value="Pay!">
+
+                    </form>
                 </div>
 
                 <div class="page rightpage">
-                    <!-- TODO : Display bribes and total payment -->
+                    <h2>S</h2>
+                    <hr>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Sam Burns</th>
+                                <td>100€</td>
+                            </tr>
+                            <tr>
+                                <th>Samuel Yans</th>
+                                <td>52 563€</td>
+                            </tr>
+                            <tr>
+                                <th>Simon Pogg</th>
+                                <td>52€</td>
+                            </tr>
+                            <tr>
+                                <th>Sophia Maria</th>
+                                <td>452€</td>
+                            </tr>
+                            <tr>
+                                <th>Stacie Hunberg</th>
+                                <td>568€</td>
+                            </tr>
+                            <tr>
+                                <th>Steve Grant</th>
+                                <td>1 000€</td>
+                            </tr>
+                            <tr>
+                                <th>Steve Porcher</th>
+                                <td>7 865€</td>
+                            </tr>
+                            <tr>
+                                <th>Sylvester Stallan</th>
+                                <td>77 897€</td>
+                            </tr>
+                            <tr>
+                                <th>Szen Tren</th>
+                                <td>562€</td>
+                            </tr>
+                            <tr>
+                                <th>Total</th>
+                                <td class='border-total'>141 059€</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
