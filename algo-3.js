@@ -18,6 +18,11 @@ Au final la liste devra ressembler à :
 
 function theaterSieges() {
   // Your code here !
+  colonnes = [];
+  lignes = [];
+  for (let i = 1; i <= 26; i++) {
+    
+  }
 }
 
 console.log(theaterSieges());

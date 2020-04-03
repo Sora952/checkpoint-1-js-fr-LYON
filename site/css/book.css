@@ -40,3 +40,52 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+/* 1ère consigne avec écran > 1200px */
+@media screen and (min-width: 1200px) {
+    .desktop {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .pages {
+        margin-bottom: 100px;
+    }
+
+    .whisky {
+        height: 200px;
+    }
+
+    .inkpen {
+        height: 350px;
+        margin-top: 150px;
+    }
+}
+
+/* 2nde consigne avec écran > 1100px et < 1200px */
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+    .inkpen {
+        display: none;
+    }
+}
+
+/* Je fixe une taille de mon verre vide, qui est caché mais qui va remplacer mon verre de whisky au clic */
+.emptyWhisky {
+    height: 200px;
+}
+
+/* Disparition du verre entre 800px et 1000px */
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    .whisky {
+        display: none;
+    }
+}
+
+/* Alignement de la page de droite sous la page de gauche pour écran < 800px */
+@media screen and (max-width: 800px) {
+    .pages {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
