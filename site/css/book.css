@@ -75,32 +75,18 @@ form button {
     overflow: auto;
 }
 
+table {
+    width: 100%;
+}
+
 .schelou {
-    margin-bottom: 10px;
-    text-align: center;
+    border-bottom: 1px solid black;
     font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
 }
 
-.rightpage hr {
-    margin-bottom: 40px;
-    margin-top: 0;
-}
-
-.count-container {
-    display: flex;
-}
-
-.count-container section p, aside p {
+tbody {
     text-align: right;
-    margin: 0;
-}
-
-.count-container section {
-    width: 50%;
-}
-
-.count-container aside {
-    width: 50%;
 }
 
 #lign-before-total {
