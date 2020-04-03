@@ -60,7 +60,7 @@ main {
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1100px) {
-
+/* I put max-width at 1100 to join the media-querie above, othewise between 1000px and 1100px inkpen was shown */
   .inkpen {
     display: none
   }
@@ -69,7 +69,7 @@ main {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 320px) and (max-width: 800px) {
 
   .inkpen {
     display: none
