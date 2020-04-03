@@ -9,6 +9,10 @@ nouveau tableau avec 2 tableaux à l'intérieur:
 
 Exemple : output [ [femmes adultes], [hommes adultes] ]
 
+filter()
+map()
+push()
+
 */
 const persons = [
   { name: "Mary Poppins", age: 32, sex: "female" },
@@ -24,5 +28,5 @@ const persons = [
 ];
 
 function findAdults(arr) {
-  // Your code here !
+  
 }
