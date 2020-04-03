@@ -18,6 +18,16 @@ Au final la liste devra ressembler à :
 
 function theaterSieges() {
   // Your code here !
+  const columns = 26;
+  const rows = 100;
+  const theaterSeats = [];
+  for (let i = 1; i <= columns; i++) {
+    for (let j = 1; j <= rows; j++) {
+      theaterSeats.push(i + " - " + j);
+    }
+  }
+  return theaterSeats;
 }
 
 console.log(theaterSieges());
+console.log(theaterSieges().reverse());
