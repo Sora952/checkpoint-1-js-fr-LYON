@@ -62,3 +62,15 @@ main {
     display: none;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .whisky, .empty-whisky {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  .pages {
+    flex-wrap: wrap;
+  }
+}
