@@ -62,5 +62,21 @@ main {
     .whisky {
         display: none;
     }
+    .desktop{
+        display: block;
+    }
 
+}
+
+@media screen and (max-width: 800px) {
+    .pages {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .rightpage {
+        width: 100%;
+    }
+    .leftpage {
+        width: 100%;
+    }
 }
