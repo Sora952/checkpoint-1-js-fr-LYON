@@ -14,4 +14,15 @@ sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ) doit renvoyer ["4", "11", "
 
 function sumArr(arrayA, arrayB) {
   // Your code here !
+  let outputArray = [];
+  arrayA.forEach((element, index) => {
+    let sum = 0;
+    const currentNumberA = parseInt(element);
+    const currentNumberB = parseInt(arrayB[index]);
+    sum = currentNumberA + currentNumberB;
+    outputArray.push(sum.toString());
+  });
+  return outputArray
 }
+
+console.log(sumArr( ["1", "2", "3"], ["2", "4", "1"] ));
