@@ -12,8 +12,18 @@ main {
     font-family: 'Bilbo Swash Caps', cursive;
 }
 
+.desktop {
+    display: flex;
+    flex-direction: row;
+}
+
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
+}
+
+.whisky {
+    margin-top: -45px;
+    margin-left: 40px;
 }
 
 .pages {
@@ -21,6 +31,7 @@ main {
     width: auto;
     flex-basis : 65%;
     margin:1em;
+    margin-top: -45px;
 }
 
 .page {
@@ -35,8 +46,73 @@ main {
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, input, select, button {
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
+}
+
+form input, select {
+    width: 90%;
+    margin-left: 30px;
+}
+
+form button {
+    width: 10%;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
 .rightpage {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+
+.schelou {
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.rightpage hr {
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.count-container {
+    display: flex;
+}
+
+.count-container section p, aside p {
+    text-align: right;
+    margin: 0;
+}
+
+.count-container section {
+    width: 50%;
+}
+
+.count-container aside {
+    width: 50%;
+}
+
+#lign-before-total {
+    border-bottom: 2px solid ; /*impossible de l'avoir avec un sélecteur nth-of-type(9) je comprend pas pourquoi je chercherai plus tard*/
+}
+
+.inkpen {
+    margin-top: 240px;
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+    .inkpen {
+        display: none;
+    }
 }

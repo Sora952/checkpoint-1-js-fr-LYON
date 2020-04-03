@@ -1,3 +1,4 @@
 window.addEventListener('load', () => {
-  // TODO : Displaying the empty whisky glass when you click on the glass.
+  document.getElementsByClassName('.whisky')
+  /*pas eu le temps de finir */ 
 });

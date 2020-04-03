@@ -22,19 +22,61 @@
     <main class="container">
 
         <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+            <aside>
+                <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+            </aside>
 
             <div class="pages">
                 <div class="page leftpage">
                     Add a bribe
-                    <!-- TODO : Form -->
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" name="name">
+                        <label for="payment">Payment</label>
+                        <select name="payment">
+                            <option value="#">Carte de crédit</option>
+                            <option value="#">Paypal</option>
+                            <option value="#">Bitcoin</option>
+                        </select>
+                        <button type="submit">Pay !</button>
+                    </form>
                 </div>
 
                 <div class="page rightpage">
-                    <!-- TODO : Display bribes and total payment -->
+                    <p class="schelou">S</p>
+                    <hr>
+                    <div class="count-container">
+                        <section>
+                            <p>Sam Burns</p>
+                            <p>Samuel Yans</p>
+                            <p>Simon Pogg</p>
+                            <p>Sophia Maria</p>
+                            <p>Stacie Hunberg</p>
+                            <p>Steve Grant</p>
+                            <p>Steve Porcher</p>
+                            <p>Sylvester Stallan</p>
+                            <p>Szen Tren</p>
+                            <p>Total</p>
+                        </section>
+                        <aside>
+                            <p>100€</p>
+                            <p>52563€</p>
+                            <p>52€</p>
+                            <p>452€</p>
+                            <p>568€</p>
+                            <p>1000€</p>
+                            <p>7865€</p>
+                            <p>77897€</p>
+                            <p id="lign-before-total">562€</p>
+                            <p>141059€</p>
+                        </aside>
+                    </div>
                 </div>
             </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+
+            <aside class="inkpen-container">
+                <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            </aside> 
         </section>
     </main>
     <script src="./index.js"></script>

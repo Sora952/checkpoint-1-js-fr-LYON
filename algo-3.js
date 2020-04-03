@@ -17,7 +17,16 @@ Au final la liste devra ressembler à :
 */
 
 function theaterSieges() {
-  // Your code here !
+  let columns = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26];
+  let theaterRoom = []
+  for(let i = 0; i < columns.length; i++) {
+    let row = [];
+    for(let j = 1; j <= 100; j++) {
+      row.push(columns[i] + ' - ' + j);
+    }
+    theaterRoom.push(row);
+  }
+  return theaterRoom;
 }
 
 console.log(theaterSieges());
