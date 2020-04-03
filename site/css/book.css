@@ -56,3 +56,9 @@ main {
 .inkpen {
   align-self: flex-end;
 }
+
+@media screen and (max-width: 1200px) {
+  .inkpen {
+    display: none;
+  }
+}
