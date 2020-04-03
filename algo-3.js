@@ -15,9 +15,16 @@ Au final la liste devra ressembler à :
 26-100
 
 */
-
 function theaterSieges() {
-  // Your code here !
+  result = [];
+  for (let i = 1; i <= 26; i++) {
+    for (let j = 1; j <= 100; j++) {
+      result.push(`${i} - ${j}`);
+    }
+  }  
+  result.map(item=>console.log(item));
 }
 
 console.log(theaterSieges());
+
+

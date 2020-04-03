@@ -15,6 +15,7 @@ body {
 }
 
 main {
+    display: flex;
     padding-top: 4em;
     font-size: 26pt;
     font-family: 'Bilbo Swash Caps', cursive;
@@ -34,7 +35,7 @@ main {
 
 .whisky{
     height: 160px;
-    padding-left: 30px;
+
 }
 
 .inkpen{
@@ -95,7 +96,7 @@ button{
     }
   }
 
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 800px) {
 
     .whisky{
         display: none;
@@ -104,12 +105,23 @@ button{
 
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 320px) {
 
    .pages{
        display: flex;
-       flex-direction: column;
+       flex-direction: column-reverse;
        justify-content: center;
    }
+   .page{
+
+    width: 100%;
+
+}
+
+main{
+    
+    display: none;
+
+}
 
   }
