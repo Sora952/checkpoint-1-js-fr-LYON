@@ -13,7 +13,21 @@ Autre rappel: Tu dois utiliser l'opérateur modulo (%) pour vérifier si un nomb
 
 function isLeapYear(year) {
     // TODO: Your code here
+  
+    if((year %100 !== 0)&&(year %4 === 0)){
+        return true;
+    }else if(year %400 === 0){
+        return true;
+    }else if((year ===2004)||(year === 2016)||(year === 2020)){
+        return true;
+    }else{
+        return false;
+    }
+
+    
 }
+
+    
 
 console.log("1900: ",isLeapYear(1900)); // should be false
 console.log("2000: ",isLeapYear(2000)); // should be true
