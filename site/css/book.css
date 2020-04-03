@@ -40,3 +40,13 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+.desktop {
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.whisky {
+    align-self: flex-start;
+}
