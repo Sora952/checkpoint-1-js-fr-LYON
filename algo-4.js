@@ -23,21 +23,21 @@ const persons = [
   { name: "Penelope Cruz", age: 47, sex: "female" }
 ];
 
-function findAdults(arr) {
+function findAdults(persons) {
   // Your code here !
   let outputArray = [];
   let males = [];
   let females = [];
 
-  for (let i = 0; i < arr.length; i++) {
-    if (i.sex === "male") {
-      males.push(arr[i]);
-    } else {
-      females.push(arr[i]);
+  for (let i = 0; i < persons.length; i++) {
+    if (persons[i].sex === "male" && persons[i].age >= 18) {
+      males.push(persons[i]);
+    } else if (persons[i].sex === "female" && persons[i].age >= 18) {
+      females.push(persons[i]);
     }
-  }
-  let finalArray = outputArray.push(males, females);
-  console.log(finalArray)
+    };
+  outputArray.push(males, females);
+  return outputArray;
 };
 
 console.log(findAdults(persons));
