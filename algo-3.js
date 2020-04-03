@@ -17,16 +17,19 @@ Au final la liste devra ressembler à :
 */
 
 function theaterSieges () {
-  let sieges = [];
-  let total = [];
+  // const colonne = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26'];
+  const colonne = [];
+  const total = [];
   // Your code here !
-  for (let i = 0; i > 26; i++) {
-    let siege = [];
-    sieges[i] = i;
-    for (let j = 0; j > 100; j++) {
-      siege.push(sieges[i]+ '-' + j);
+  for (let i = 0; i < 27; i++) {
+    const sieges = [];
+    colonne[i] = i;
+
+    for (let j = 0; j < 101; j++) {
+      sieges.push(colonne[i] + '-' + j);
     }
-    total.push(siege);
+
+    total.push(sieges);
   }
   return total;
 }
