@@ -18,6 +18,13 @@ Au final la liste devra ressembler à :
 
 function theaterSieges() {
   // Your code here !
+  let listSiege = ''
+  for (let i = 1 ; i <= 26 ; i++) {
+    for (let j = 1 ; j <= 100 ; j++) {
+      listSiege = `${i} - ${j}`
+      console.log(listSiege)
+    }
+  }
 }
 
 console.log(theaterSieges());

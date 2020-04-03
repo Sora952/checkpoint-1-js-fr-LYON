@@ -25,4 +25,21 @@ const persons = [
 
 function findAdults(arr) {
   // Your code here !
+  let outputArray = [];
+  let arrayFemale = []
+  let arrayMale = []
+  arr.forEach (person => {
+    if ((person.age >= 18) && (person.sex === 'female')) {
+      arrayFemale.push(person.name);
+    }
+  })
+  arr.forEach (person => {
+    if ((person.age >= 18) && (person.sex === 'male')) {
+      arrayMale.push(person.name);
+    }
+  })
+  outputArray = [arrayFemale,arrayMale];
+  return outputArray
 }
+
+console.log(findAdults(persons))

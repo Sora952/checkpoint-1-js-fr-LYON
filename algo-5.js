@@ -32,6 +32,16 @@ const scores = [
 
 function getPoints(array) {
   // Your code here !
+  let totalPointsMyTeam = 0;
+  array.forEach(match => {
+    if ((parseInt(match[0]) > parseInt(match[2]))) {
+      totalPointsMyTeam += 3;
+    }
+    else if ((parseInt(match[0]) === parseInt(match[2]))) {
+      totalPointsMyTeam += 1;
+    }
+  });
+  return totalPointsMyTeam
 }
 
 console.log(getPoints(scores));
