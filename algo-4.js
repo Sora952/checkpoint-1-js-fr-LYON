@@ -10,19 +10,18 @@ nouveau tableau avec 2 tableaux à l'intérieur:
 Exemple : output [ [femmes adultes], [hommes adultes] ]
 
 */
-const persons = [
-  { name: "Mary Poppins", age: 32, sex: "female" },
-  { name: "Tony Stark", age: 36, sex: "male" },
-  { name: "John Doe", age: 12, sex: "male" },
-  { name: "Jane Doe", age: 6, sex: "female" },
-  { name: "Homer Simpson", age: 45, sex: "male" },
-  { name: "Leonardo Di Caprio", age: 42, sex: "male" },
-  { name: "Carla Bruni", age: 54, sex: "female" },
-  { name: "Lisa Simpson", age: 13, sex: "female" },
-  { name: "Millie Bobby Brown", age: 15, sex: "female" },
-  { name: "Penelope Cruz", age: 47, sex: "female" }
-];
-
 function findAdults(arr) {
-  // Your code here !
+  let array = [[], []];
+
+  for (let i = 0; i < persons.length; i++) {
+    if (persons[i].age > 17) {
+      if (persons[i].sex === "female") {
+        array[0].push(persons[i]);
+      } else {
+        array[1].push(persons[i]);
+      }
+    }
+  }
+
+  return array;
 }
