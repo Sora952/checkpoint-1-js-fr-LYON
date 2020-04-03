@@ -14,15 +14,3 @@ sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ) doit renvoyer ["4", "11", "
 
 arrayNbr1 = ["1", "2", "3", "6"];
 arrayNbr2 = ["4", "7", "2", "4"];
-
-function sumArr(arrayA, arrayB) {
-  const result = [arrayA, ...[arrayB]];
-  let a = [];
-   result.forEach(item => {
-     for(let i = 0; i <= result[0].length; i++){
-      a.push(Number(item[0][i]) + Number(item[1][i]));
-  }
-})
-  return a
-}
-console.log(sumArr(arrayNbr1, arrayNbr2));
