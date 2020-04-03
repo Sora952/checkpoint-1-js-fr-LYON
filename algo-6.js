@@ -14,15 +14,34 @@ sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ) doit renvoyer ["4", "11", "
 
 function sumArr(arrayA, arrayB) {
   // Your code here !
-  let outputArray = [];
-  arrayA.forEach((element, index) => {
-    let sum = 0;
-    const currentNumberA = parseInt(element);
-    const currentNumberB = parseInt(arrayB[index]);
-    sum = currentNumberA + currentNumberB;
-    outputArray.push(sum.toString());
-  });
-  return outputArray
+  const outputArray = [];
+  if (arrayA.length >= arrayB.length) {
+    arrayA.forEach((element, index) => {
+      let sum = 0;
+      let currentNumberA = parseInt(element);
+      let currentNumberB = parseInt(arrayB[index]);
+      if (isNaN(currentNumberA) && !isNaN(currentNumberB)) {
+        currentNumberA = 0;
+      } else if (!isNaN(currentNumberA) && isNaN(currentNumberB)) {
+        currentNumberB = 0;
+      }
+      sum = currentNumberA + currentNumberB;
+      outputArray.push(sum.toString());
+    });
+    return outputArray;
+  } else {
+    arrayB.forEach((element, index) => {
+      let sum = 0;
+      const currentNumberB = parseInt(element);
+      let currentNumberA = parseInt(arrayA[index]);
+      if (isNaN(currentNumberA)) {
+        currentNumberA = 0;
+      }
+      sum = currentNumberA + currentNumberB;
+      outputArray.push(sum.toString());
+    });
+    return outputArray;
+  }
 }
 
-console.log(sumArr( ["1", "2", "3"], ["2", "4", "1"] ));
+console.log(sumArr(["2", "7", "3", "8", "2"],["2", "4", "9"]));
