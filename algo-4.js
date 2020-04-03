@@ -25,4 +25,23 @@ const persons = [
 
 function findAdults(arr) {
   // Your code here !
+  const female = [];
+  const male = [];
+  const output = [];
+
+  for(let i = 0; i < persons.length; i++){
+    if((persons.age >=18) && (persons.sex === "female")){
+      female.push(persons.name + persons. age);
+    }
+  }
+
+  for(let j = 0; j < persons.length; j++){
+    if((persons.age>=18) && (persons.sex === "male")){
+      male.push(persons.name + persons. age);
+    }
+  }
+    for(let k = 0; k < persons.length; k++){
+      output.push(female + "," + male);
+    }
+ return output;
 }
