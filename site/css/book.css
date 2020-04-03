@@ -51,8 +51,15 @@ main {
     align-self: flex-start;
 }
 
-@media screen and (min-width: 1100px) and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .inkpen {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    .whisky {
         display: none;
     }
 
