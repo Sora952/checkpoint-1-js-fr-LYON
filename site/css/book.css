@@ -95,3 +95,18 @@ input#glass:checked {
     }
 
 }
+
+@media only screen and (max-width: 799px){
+    .pages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightpage {
+        order: 1;
+    }
+
+    .leftpage {
+        order: 2;
+    }
+}
