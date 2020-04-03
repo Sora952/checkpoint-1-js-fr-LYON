@@ -30,8 +30,21 @@ const scores = [
   "3:4"
 ];
 
-function getPoints(array) {
-  // Your code here !
+function getPoints (array) {
+  let total = 0;
+
+  for (const matchs of array) {
+    const team = matchs[0];
+    const others = matchs[2];
+
+    if (team === others) {
+      total += 1;
+    } else if (team > others) {
+      total += 3;
+    }
+  }
+
+  return total;
 }
 
 console.log(getPoints(scores));
