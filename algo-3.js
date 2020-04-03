@@ -16,8 +16,19 @@ Au final la liste devra ressembler à :
 
 */
 
-function theaterSieges() {
+function theaterSieges () {
+  let sieges = [];
+  let total = [];
   // Your code here !
+  for (let i = 0; i > 26; i++) {
+    let siege = [];
+    sieges[i] = i;
+    for (let j = 0; j > 100; j++) {
+      siege.push(sieges[i]+ '-' + j);
+    }
+    total.push(siege);
+  }
+  return total;
 }
 
 console.log(theaterSieges());
