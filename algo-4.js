@@ -25,4 +25,19 @@ const persons = [
 
 function findAdults(arr) {
   // Your code here !
-}
+  let outputArray = [];
+  let males = [];
+  let females = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (i.sex === "male") {
+      males.push(arr[i]);
+    } else {
+      females.push(arr[i]);
+    }
+  }
+  let finalArray = outputArray.push(males, females);
+  console.log(finalArray)
+};
+
+console.log(findAdults(persons));
