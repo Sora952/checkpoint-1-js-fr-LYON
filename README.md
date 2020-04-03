@@ -1,6 +1,6 @@
 # Checkpoint 1 - JS
 
-Your 1st checkpoint !
+Your 1st checkpoint ! by abdel
 
 **!!! PREMIERE ETAPE OBLIGATOIRE AVANT DE COMMENCER LE PREMIER EXERCICE !!!**
 
