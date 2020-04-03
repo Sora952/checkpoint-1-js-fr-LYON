@@ -1,10 +1,10 @@
-window.addEventListener('click', () => {
-  // TODO : Displaying the empty whisky glass when you click on the glass. 
-  if (document.getElementsByClassName('whisky').src === './image/whisky.png') {
-    document.getElementsByClassName('whisky').src = './image/empty_whisky.png';
-    console.log('empty_whisky');
+const glass = document.getElementById('whisky');
+
+glass.addEventListener('click', () => {
+  // TODO : Displaying the empty whisky glass when you click on the glass.
+  if (glass.src.endsWith('/image/whisky.png')) {
+    glass.src = './image/empty_whisky.png';
   } else {
-    document.getElementsByClassName('whisky').src = './image/whisky.png';
-    console.log('whisky');
+    glass.src = './image/whisky.png';
   }
 });
