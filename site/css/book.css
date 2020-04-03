@@ -116,3 +116,18 @@ form button {
         display: none;
     }
 }
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    .inkpen, .whisky {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+    .inkpen, .whisky {
+        display: none;
+    }
+    .pages {
+        flex-direction: column;
+    }
+}
