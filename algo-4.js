@@ -25,4 +25,12 @@ const persons = [
 
 function findAdults(arr) {
   // Your code here !
+  const array = [];
+  const adultWomen = arr.filter(person => person.sex === 'female' && person.age >= 18);
+  const adultMen = arr.filter(person => person.sex === 'male' && person.age >= 18);
+
+  array.push(adultWomen);
+  array.push(adultMen);
+
+  return array;
 }
