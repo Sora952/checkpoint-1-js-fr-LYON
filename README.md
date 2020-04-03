@@ -46,6 +46,6 @@ BONUS (facultatif)
 
 ## Partie 3: HTML & CSS3
 
-### Attention, ce test est à réaliser sans Boostrap, tu devras utiliser flexbox à la place !
+### Attention, ce test est à réaliser sans Bootstrap, tu devras utiliser flexbox à la place !
 
 Suis les instructions contenues dans le fichier > [index.html](site/index.html)
