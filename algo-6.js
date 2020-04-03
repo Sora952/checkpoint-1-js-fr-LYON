@@ -44,4 +44,4 @@ function sumArr(arrayA, arrayB) {
   }
 }
 
-console.log(sumArr(["2", "7", "3", "8", "2"],["2", "4", "9"]));
+console.log(sumArr(["-2", "7,7", "3", "8", "2"],["2", "4", "9"]));
