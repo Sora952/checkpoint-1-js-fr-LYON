@@ -96,17 +96,8 @@ th {
 
 /***************DESKTOP VERSION*************************/
 
-@media screen and (max-width : 1100px) {
+@media screen and (min-width: 1100px) and (max-width: 1200px)  {
     .inkpen {
-        display:none;
-    }
-     
-}
-
-
-/***************IPAD VERSION*************************/
-@media screen and (max-width : 1000px) {
-    .whisky {
         display:none;
     }
     .pages {
@@ -115,19 +106,47 @@ th {
     width: auto;
     flex-basis: 85%;
     padding-top: 20px;
+    padding-right: 10px;
     }
     .fill{
         display: none;
     }
 }
 
+/***************IPAD VERSION*************************/
+
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+    .inkpen {
+        display:none;
+    }
+    .whisky{
+        display: none;
+    }
+    .pages {
+    display: flex;
+    width: auto;
+    flex-basis: 100%;
+    margin: 1em;
+}
+.fill{
+    display: none;
+}
 
 
+}
+     
 /***************MOBILE VERSION*************************/
-@media screen and (max-width : 800px) {
+@media screen and (max-width: 800px) {
     .pages {
     display: flex;
     flex-direction: column-reverse;
+    flex-basis: 85%;
+    }
+    .inkpen {
+        display:none;
+    }
+    .whisky{
+        display: none;
     }
     .page {
         margin: auto;
