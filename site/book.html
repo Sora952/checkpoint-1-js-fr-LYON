@@ -23,7 +23,7 @@
 
         <section class="desktop">
             <aside>
-                <img src="image/whisky.png" alt="a whisky glass" class="whisky" onclick="toggleImage();" />
+                <img src="image/whisky.png" alt="a whisky glass" class="whisky" id="whisky-switch" />
             </aside>
 
             <div class="pages">
@@ -33,11 +33,7 @@
                         <label for="name">Name</label>
                         <input type="text" name="name">
                         <label for="payment">Payment</label>
-                        <select name="payment">
-                            <option value="#">Carte de crédit</option>
-                            <option value="#">Paypal</option>
-                            <option value="#">Bitcoin</option>
-                        </select>
+                        <input type="number" name="montant">
                         <button type="submit">Pay !</button>
                     </form>
                 </div>
