@@ -41,15 +41,17 @@ main {
     overflow: auto;
 }
 
-.desktop {
-    display: flex;
-    justify-content: space-between;
-}
-
-aside.left {
-    align-self: flex-start;
-}
-
-aside.right {
-    align-self: flex-end;
+@media only screen and (min-width: 1200px){
+    .desktop {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    aside.left {
+        align-self: flex-start;
+    }
+    
+    aside.right {
+        align-self: flex-end;
+    }
 }
