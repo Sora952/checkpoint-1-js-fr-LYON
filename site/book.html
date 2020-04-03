@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+    
     <header>
         <nav class="navbar">
             <img src="image/logo.png" class="logo" alt="logo-wcs" />
@@ -18,20 +18,37 @@
             <a href="book.html">Secret book</a>
         </nav>
     </header>
-
+    
     <main class="container">
-
+        
         <section class="desktop">
             <aside class="left">
                 <input class="whisky" type="checkbox" name="glass" id="glass">
             </aside>
-
+            
             <div class="pages">
                 <div class="page leftpage">
                     Add a bribe
                     <!-- TODO : Form -->
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name" id="name">Name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="payment" id="payment">Payment</label>
+                            <input id="payment" list="payment-list" type="select" placeholder="... €">
+                            <datalist id="payment-list">
+                                <option value=""></option>
+                                <option value="100€">100€</option>
+                                <option value="1000€">1000€</option>
+                                <option value="10000€">10000€</option>
+                            </datalist>
+                        </div>
+                        <button type="submit">Pay !</button>
+                    </form>
                 </div>
-
+                
                 <div class="page rightpage">
                     <!-- TODO : Display bribes and total payment -->
                 </div>
