@@ -1,11 +1,7 @@
 ### by abdel
 # Checkpoint 1 - JS
 
-<<<<<<< HEAD
-Your 1st checkpoint ! by abdel
-=======
 Your 1st checkpoint ! 
->>>>>>> 75c134b8784cd3f5f7f0bcfaa1803b44a10b8ac1
 
 **!!! PREMIERE ETAPE OBLIGATOIRE AVANT DE COMMENCER LE PREMIER EXERCICE !!!**
 
