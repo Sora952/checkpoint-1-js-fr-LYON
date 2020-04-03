@@ -30,8 +30,25 @@ const scores = [
   "3:4"
 ];
 
-function getPoints(array) {
+function getPoints(scores) {
   // Your code here !
+  let outputArray = [];
+  let counter = 0;
+
+  for (let i = 0; i < scores.length; i++) {
+    outputArray.push(scores[i].split(':'));
+  }
+
+  for (let i = 0; i < scores.length; i++) {
+    if (outputArray[i][0] > outputArray[i][1]) {
+      counter += 3;
+    } else if (outputArray[i][0] === outputArray[i][1]) {
+      counter += 1;
+    } else {
+      counter += 0;
+    }
+  }
+  return counter;
 }
 
 console.log(getPoints(scores));
