@@ -31,7 +31,18 @@ const scores = [
 ];
 
 function getPoints(array) {
-
+const reducer = (accum, Value) => accum + Value;
+arr = [];
+  arr = array.map(item => {
+  if (item[0] > item[2]) {
+    return  3;
+  }else if (item[0] == item[2]) {
+    return  1;
+  }else{
+    return  0;
+  }
+})
+return arr.reduce(reducer)
 }
 
 console.log(getPoints(scores));
