@@ -16,8 +16,15 @@ Au final la liste devra ressembler à :
 
 */
 
-function theaterSieges() {
-  // Your code here !
+function theaterSieges (maximumRow, maximumColumn) {
+  for (let rowActuelle = 1; rowActuelle <= maximumRow; rowActuelle++) {
+    for (let colonneActuelle = 1; colonneActuelle <= maximumColumn; colonneActuelle++) {
+      console.log(rowActuelle + ' - ' + colonneActuelle);
+    }
+  }
 }
 
-console.log(theaterSieges());
+const CombienDeRow = 26;
+const CombienDeColumn = 100;
+
+console.log(theaterSieges(CombienDeRow, CombienDeColumn));
