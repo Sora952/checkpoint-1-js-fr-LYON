@@ -87,7 +87,25 @@ form button {
     padding: 8px;
     margin-top: 16px;
 }
+
+.rightpage h3 {
+    font-family: 'Mono';
+    font-weight: 400;
+    margin: -10px auto 0 auto;
+    text-align: center;
+    padding-bottom: 24px;
+    border-bottom: solid 0.5px black;
+}
  
+
+.rightpage table {
+    width: 70%;
+    margin-left: 30%;
+}
+
+.rightpage .total {
+    border-top: solid 0.5px black;
+}
 @media only screen and (min-width: 1200px){    
     aside.left {
         align-self: flex-start;
