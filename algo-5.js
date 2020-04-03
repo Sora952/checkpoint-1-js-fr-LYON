@@ -31,7 +31,7 @@ const scores = [
 ];
 
 function getPoints(array) {
-  // Your code here !
+
 }
 
 console.log(getPoints(scores));

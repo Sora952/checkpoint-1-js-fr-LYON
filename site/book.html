@@ -19,23 +19,37 @@
         </nav>
     </header>
 
-    <main class="container">
+    <main class="container"></main>
 
-        <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+    <section class="desktop">
+        <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
 
-            <div class="pages">
-                <div class="page leftpage">
-                    Add a bribe
-                    <!-- TODO : Form -->
-                </div>
+        <div class="pages">
+            <div class="page leftpage">
+                Add a bribe
+                <form action="/ma-page-de-traitement" method="post">
+                    <div>
+                        <label for="name"> Name :</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <label for="name"> Payemet :</label>
+                            <input class="" type="text" placeholder="">
+                            <div></div>
+                        </div>
+                        <button>pay</button>
+                    </div>
 
-                <div class="page rightpage">
-                    <!-- TODO : Display bribes and total payment -->
-                </div>
+                </form>
             </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
-        </section>
+
+            <div class="page rightpage">
+                <!-- TODO : Display bribes and total payment -->
+            </div>
+        </div>
+        <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+    </section>
     </main>
     <script src="./index.js"></script>
 </body>

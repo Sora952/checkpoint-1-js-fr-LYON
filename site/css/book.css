@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body {
+    
     background-image: url('../image/background.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,8 +20,26 @@ main {
     font-family: 'Bilbo Swash Caps', cursive;
 }
 
+
+.desktop{
+    display: flex;
+    justify-content: center;
+  
+}
+
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
+ 
+}
+
+.whisky{
+    height: 160px;
+    padding-left: 30px;
+}
+
+.inkpen{
+    height: 300px;
+    padding-top: 100px;
 }
 
 .pages {
@@ -21,13 +47,17 @@ main {
     width: auto;
     flex-basis : 65%;
     margin:1em;
+  
+ 
 }
 
 .page {
+
     height:65vh;
     padding: 3vw;
     width: 50%;
     background-blend-mode: multiply;
+
 }
 
 .leftpage {
@@ -40,3 +70,46 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+.leftpage{
+    font-family: 'Dancing Script', cursive;
+}
+
+form{
+display: flex;
+flex-direction: column;
+}
+
+button{
+    background-color: white;
+    border: none;
+    padding:5px 10px;
+
+}
+
+
+@media screen and (max-width: 1100px) {
+
+    .inkpen{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 800px){
+
+    .whisky{
+        display: none;
+    }
+
+
+  }
+
+  @media screen and (max-width: 800px) {
+
+   .pages{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+   }
+
+  }

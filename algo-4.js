@@ -24,5 +24,13 @@ const persons = [
 ];
 
 function findAdults(arr) {
-  // Your code here !
+  arr1 = [];
+  arr2 = [];
+  if(arr1 = persons.filter(item => item.sex === "male" && item.age >= 18)){
+    arr1.push(arr);
+  }else if (arr2 = persons.filter(item => item.sex === "female" && item.age >= 18)){
+    arr2.push(arr);
+  }
+  return arr1
 }
+console.log (findAdults(persons));
