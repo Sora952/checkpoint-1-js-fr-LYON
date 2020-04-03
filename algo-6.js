@@ -12,6 +12,11 @@ sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ) doit renvoyer ["4", "11", "
 
 */
 
+const arr1 = ["1", "2", "3"];
+const arr2 = ["2", "7", "3", "8", "2"];
+
 function sumArr(arrayA, arrayB) {
   // Your code here !
 }
+
+console.log(sumArr(arr1, arr2));
