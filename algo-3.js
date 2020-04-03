@@ -28,3 +28,5 @@ function theaterSieges() {
     console.log(item);
   });
 }
+
+console.log(theaterSieges());
