@@ -13,8 +13,8 @@ main {
 }
 .desktop {
     display: flex;
+    border: 3px solid red
 }
-
 
 .pen {
     align-self: flex-end;
@@ -29,6 +29,8 @@ main {
     width: auto;
     flex-basis : 65%;
     margin:1em;
+    border: 10px solid green;
+    /* height: auto; */
 }
 
 .page {
@@ -36,7 +38,7 @@ main {
     padding: 3vw;
     width: 50%;
     background-blend-mode: multiply;
-
+    /* height: auto; */
 }
 
 .leftpage {
@@ -48,12 +50,81 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+    text-align: left;
+    /* height: auto; */
+}
+
+.pay {
+    text-align: center;
+}
+
+table {
+    margin-right: 0;
+    position: relative;
+    float : right;
+}
+
+tr {
+    width: 70%;
+}
+
+
+td {
+    width: 70%;
+    text-align: right;
+    padding-right: 20px;
+    margin-right: auto;
+    font-size: 1.2em;
+    padding: 5px 5px ;
+}
+
+#total {
+    border: 1px solid black;
+}
+
+input{
+    width: 70%;
+    border-radius: 5px;
+    height: 2em;
+}
+
+#paybutton {
+    font-size: 0.7em;
+    margin-top: 10px;
+
+}
+
+.name {
+    border: 3px solid blue;
+}
+
+.payment {
+    border: 3px solid blue;
+}
+
+p {
+    text-align:center;
+    margin-bottom: 0;
+    border: 2px solid red;
 }
 
 @media only screen and (min-width: 1100px) and (max-width:1200px) {
+    .desktop {
+        bottom : 100px;
+    }
+    
     .pen {
         display: none;
     }
+
+    .pay {
+        font-size: 0.5em;
+    }
+
+    td {
+        font-size: 1.25em;
+    }
+
 }
 
 
@@ -61,6 +132,15 @@ main {
     .whisky {
         display: none;
     }
+
+    .pay {
+        font-size: 0.5em;
+    }
+
+    td {
+        font-size: 0.7em;
+    }
+
 }
 
 
@@ -72,6 +152,14 @@ main {
     }
 
     .page {
-        height: 50%;
+        height: 5   0%;
+    }
+
+    .pay {
+        font-size: 0.5em;
+    }
+
+    td {
+        font-size: 0.7em;
     }
 }
