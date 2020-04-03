@@ -32,6 +32,17 @@ const scores = [
 
 function getPoints(array) {
   // Your code here !
+  let sum = 0;
+  array.forEach(score => {
+    const scoreTeam1 = score.split(':')[0];
+    const scoreTeam2 = score.split(':')[1];
+    if (scoreTeam1 === scoreTeam2) {
+      sum = sum + 1;
+    } else if (scoreTeam1 > scoreTeam2) {
+      sum = sum + 3;
+    }
+  });
+  return sum;
 }
 
 console.log(getPoints(scores));
