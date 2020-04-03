@@ -10,6 +10,10 @@ thirdAngle(20, 80) doit renvoyer 80
 
 function thirdAngle(a, b) {
   // Your code here !
+  const triangleSum = 180;
+  const inputAngles = a + b;
+  const outputAngle = triangleSum - inputAngles;
+  return outputAngle;
 }
 
 console.log(thirdAngle(90, 30));
