@@ -22,19 +22,68 @@
     <main class="container">
 
         <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+          <div class="deskElementsContainer">
+            <img src="image/whisky.png" alt="a whisky glass" class="whisky" id="whisky" />
 
             <div class="pages">
                 <div class="page leftpage">
-                    Add a bribe
-                    <!-- TODO : Form -->
+                  <h2 class="titleLeftPage">Add a bribe</h2> 
+                  <label for="Name">Name</label>
+                  <input type="text" name="client" id="name">
+                  <label for="payment">Payment</label>
+                  <input type="text" name="payment" id="payment">
+                  <button id="button">Pay !</button>
                 </div>
 
                 <div class="page rightpage">
-                    <!-- TODO : Display bribes and total payment -->
+                  <h2 class="titleRightPage">S</h2> 
+                  <table class="clientsTable">
+                    <tr>
+                      <td>Sam Burns</td>
+                      <td>100€</td>
+                    </tr>
+                    <tr>
+                      <td>Samuel Yans</td>
+                      <td>52563€</td>
+                    </tr>
+                    <tr>
+                      <td>Simon Pogg</td>
+                      <td>52€</td>
+                    </tr>
+                    <tr>
+                      <td>Sophia Maria</td>
+                      <td>452€</td>
+                    </tr>
+                    <tr>
+                      <td>Stacie Hunberg</td>
+                      <td>568€</td>
+                    </tr>
+                    <tr>
+                      <td>Steve Grant</td>
+                      <td>1000€</td>
+                    </tr>
+                    <tr>
+                      <td>Steve Porcher</td>
+                      <td>7865€</td>
+                    </tr>
+                    <tr>
+                      <td>Sylvester Stallan</td>
+                      <td>77899€</td>
+                    </tr>
+                    <tr>
+                      <td>Szen Trent</td>
+                      <td>562€</td>
+                    </tr>
+                    <tr>
+                      <td>Total</td>
+                      <td class="lastCell">141059€</td>
+                    </tr>
+                  </table>
                 </div>
             </div>
+          
             <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+          </div>
         </section>
     </main>
     <script src="./index.js"></script>
