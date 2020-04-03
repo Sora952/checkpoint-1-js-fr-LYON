@@ -16,10 +16,17 @@ main {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
 
-.desktop{
+.main{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-content: center;
+}
+
+.whisky{
+    float: left;
+}
+.inkpen{
+    float: right;
 }
 
 
@@ -51,4 +58,8 @@ main {
 .form input, #payment{
     width: 90%;
     height: 15px;
+}
+
+@media screen (max-width: 1000px){
+
 }
