@@ -17,7 +17,11 @@ Au final la liste devra ressembler à :
 */
 
 function theaterSieges() {
-  // Your code here !
+    for (let i = 1; i <= 26; i++) {
+        for (let j = 1; j <= 100; j++) {
+            console.log(i + "-" + j)
+        }
+    }
 }
 
-console.log(theaterSieges());
+theaterSieges()
