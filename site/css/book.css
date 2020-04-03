@@ -64,7 +64,7 @@ form input, select {
 }
 
 form button {
-    width: 10%;
+    width: 15%;
     margin-top: 20px;
     margin-left: 30px;
 }
@@ -101,11 +101,23 @@ tbody {
     .inkpen {
         display: none;
     }
+    .desktop {
+        justify-content: center;
+    }
+    form button {
+        width: 25%;
+    }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1000px) {
     .inkpen, .whisky {
         display: none;
+    }
+    .desktop {
+        justify-content: center;
+    }
+    form button {
+        width: 25%;
     }
 }
 
@@ -113,7 +125,18 @@ tbody {
     .inkpen, .whisky {
         display: none;
     }
+    .desktop {
+        justify-content: center;
+    }
     .pages {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+    .leftpage, .rightpage {
+        width: 100%;
+    }
+    form button {
+        width: 20%;
     }
 }
