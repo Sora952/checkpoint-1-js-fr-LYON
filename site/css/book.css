@@ -12,8 +12,18 @@ main {
     font-family: 'Bilbo Swash Caps', cursive;
 }
 
+.desktop {
+  display: flex;
+  align-items: flex-start;
+}
+
+.inkpen {
+  align-self: flex-end;
+}
+
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
+    display: flex;
 }
 
 .pages {
@@ -23,11 +33,50 @@ main {
     margin:1em;
 }
 
+form {
+  padding-left: 30px;
+}
+
+.input, button {
+  box-sizing: border-box;
+  border: none;
+}
+
+button {
+  width: 20%;
+  height: 70%;
+}
+
+.zonePayments {
+
+  text-align: justify;
+}
+
+.sUpper {
+
+  text-align: center;
+  margin: auto;
+}
+
+.totalEuros {
+
+  text-decoration: overline;
+}
+
+.payements {
+  width: 100%;
+}
+
 .page {
+    display: block;
     height:65vh;
     padding: 3vw;
     width: 50%;
     background-blend-mode: multiply;
+}
+
+.rightpage {
+  
 }
 
 .leftpage {
@@ -39,4 +88,44 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+
+.lineS {
+  border: 1px solid black;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  
+  .inkpen {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+
+  .whisky, .inkpen {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+
+  .whisky, .inkpen {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
