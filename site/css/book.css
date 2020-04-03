@@ -52,6 +52,15 @@ button {
   text-align: justify;
 }
 
+li {
+  list-style-type: none;
+}
+
+.Transactions {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .sUpper {
 
   text-align: center;
@@ -75,10 +84,6 @@ button {
     background-blend-mode: multiply;
 }
 
-.rightpage {
-  
-}
-
 .leftpage {
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
@@ -88,6 +93,7 @@ button {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+    text-align: right;
 }
 
 .lineS {
