@@ -18,11 +18,15 @@ Au final la liste devra ressembler à :
 
 function theaterSieges() {
   // Your code here !
-  colonnes = [];
-  lignes = [];
+  outputArray = [];
   for (let i = 1; i <= 26; i++) {
-    
-  }
+    for (let j = 1; j <= 100; j++) {
+      outputArray.push(`${i} - ${j}`);
+    }
+  }  
+  outputArray.forEach(function(item) {
+    console.log(item);
+  });
 }
 
 console.log(theaterSieges());
