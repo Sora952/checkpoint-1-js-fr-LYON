@@ -17,7 +17,13 @@ Au final la liste devra ressembler à :
 */
 
 function theaterSieges() {
-  // Your code here !
+  output="";
+  for (i=1 ; i <= 26 ; i++){
+    for (j=1 ; j <= 100 ; j++){
+     (i === 26 && j === 100) ? output += `${i}-${j}` : output += `${i}-${j}\n`
+    }
+  }
+  return output;
 }
 
 console.log(theaterSieges());
