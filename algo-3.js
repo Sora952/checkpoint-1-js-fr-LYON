@@ -16,8 +16,14 @@ Au final la liste devra ressembler à :
 
 */
 
+
 function theaterSieges() {
   // Your code here !
+  const seatLine = [];
+  for (let i = 1; i < 101; i++) {
+    seatLine.push[i]
+  }
+  return seatLine[];
 }
 
 console.log(theaterSieges());
