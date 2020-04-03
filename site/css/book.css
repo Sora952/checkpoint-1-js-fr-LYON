@@ -30,13 +30,80 @@ main {
     background-blend-mode: multiply;
 }
 
+h2{
+  font-weight:normal;
+}
+
 .leftpage {
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 0px;
+    font-size: 30px;
+}
+
+.titleLeftPage{
+  margin-bottom: 5px;
+}
+
+#button{
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  height: 25px;
+  margin-left: 10px;
+}
+
+#name{
+  border: none;
+  height: 25px;
+  width: 325px;
+  margin-left: 10px;
+}
+
+#payment{
+  border: none;
+  height: 25px;
+  width: 325px;
+  margin-left: 10px;
 }
 
 .rightpage {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
-    overflow: auto;
+    font-size: 30px;
+    padding-top: 0px;
+    margin-bottom: 30px;
+}
+
+.titleRightPage{
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.clientsTable{
+  float: right;
+  text-align: right;
+  width: 100%;
+}
+
+.lastCell{
+  border-top: solid;
+  border-top: black;
+}
+
+.deskElementsContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+@media only screen (max-width:1200px) and (min-width:1100px){
+  .inkpen{
+    display: none;
+  }
 }
