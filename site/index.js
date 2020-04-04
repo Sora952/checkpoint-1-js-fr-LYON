@@ -1,11 +1,18 @@
-
-//window.addEventListener('load', () => {
-  // TODO : Displaying the empty whisky glass when you click on the glass.
-//});
-
-const firstImg = document.getElementById('whisky');
-
-firstImg.addEventListener('click', () => {
-  firstImg.style.display = 'none';
-  firstImg.innerHTML = <img src="image/empty_whisky.png" alt="an empty whisky glass" class="emptyWhisky" id="emptyWhisky" />;
+const whiskyElt = document.querySelector('.whisky');
+whiskyElt.addEventListener('click', (e) => {
+  whiskyElt.setAttribute('src', 'image/empty_whisky.png');
 });
+
+// function changeImage (element) {
+//   const firstImg = element.getElementById('whisky').item(0);
+//   let newImg = firstImg.getAttribute('src');
+//   if (newImg === 'image/whisky.png') {
+//     newImg = ('image/empty_whisky.png');
+//   } else {
+//     newImg = ('image/whisky.png');
+//     firstImg.setAttribute('src', newImg);	
+//   }
+// }
+
+// console.log(changeImage);
+
