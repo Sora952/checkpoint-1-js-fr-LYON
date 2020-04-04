@@ -17,6 +17,25 @@ const arr2 = ["2", "7", "3", "8", "2"];
 
 function sumArr(arrayA, arrayB) {
   // Your code here !
+  const reducer = (accumulator, currentValue) =>
+    parseInt(accumulator) + parseInt(currentValue);
+  let sumA = 0;
+  let sumB = 0;
+  if (arrayA.length !== 0) {
+    sumA = arrayA.reduce(reducer);
+  } else {
+    arrayA = 0;
+    sumA = arrayA;
+  }
+
+  if (arrayB.length !== 0) {
+    sumB = arrayB.reduce(reducer);
+  } else {
+    arrayB = 0;
+    sumB = arrayB;
+  }
+
+  return (sumA + sumB).toString();
 }
 
 console.log(sumArr(arr1, arr2));
