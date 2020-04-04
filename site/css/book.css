@@ -47,21 +47,6 @@ main {
     margin: auto;
 }
 
-input#glass:before {
-    content: url('/site/image/whisky.png');
-    display: block;
-}
-
-input#glass {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-input#glass:checked {
-    content: url('/site/image/empty_whisky.png');
-}
-
 .form-group {
     width: 100%;
     display: flex;
