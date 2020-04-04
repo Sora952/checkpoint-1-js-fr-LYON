@@ -1,3 +1,11 @@
 window.addEventListener('load', () => {
-  // TODO : Displaying the empty whisky glass when you click on the glass.
+
+  let whisky = document.querySelector('.whisky');
+  
+  whisky.addEventListener('click', () => {
+    whisky.setAttribute("src","image/empty_whisky.png")
+  });
+
 });
+
+
