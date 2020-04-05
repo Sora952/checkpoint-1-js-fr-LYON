@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
+
+body {
+    background-image: url('../image/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+  width: 100%;
+    padding-top: 4em;
+    font-size: 26pt;
+    font-family: 'Bilbo Swash Caps', cursive;
+}
+
+.whisky, .empty-whisky, .inkpen, .page {
+    filter: drop-shadow(15px 15px 5px var(--shadow));
+}
+
+.pages {
+    display: flex;
+    width: auto;
+    flex-basis : 65%;
+    margin:1em;
+}
+
+.page {
+    height:65vh;
+    padding: 3vw;
+    width: 50%;
+    background-blend-mode: multiply;
+}
+
+.leftpage {
+    background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+    border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+}
+
+.rightpage {
+    background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+    border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
+    overflow: auto;
+}
+
+/* My modifications */
+.desktop {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.whisky, .empty-whisky {
+  align-self: flex-start;
+}
+
+.inkpen {
+  align-self: flex-end;
+}
+
+/* Left page */
+form {
+  font-size: 1.5rem ;
+}
+
+form input {
+  width: 80%;
+  margin: 0 0 20px 10px;
+  padding: 3px;
+}
+
+form button {
+  margin: 0 0 0 10px;
+}
+
+/* Right page */
+h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Scope One', serif;
+  border-bottom: 1px solid;
+  margin: auto;
+  font-weight: lighter;
+}
+
+table {
+  width: 100%;
+  padding-top: 20px;
+  font-size: 1.8vw;
+  text-align: right;
+}
+
+td {
+  padding-top: 10px;
+}
+
+.topLine {
+  border-top: 1px solid;
+}
+
+@media screen and (max-width: 1200px) {
+  .inkpen {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .whisky, .empty-whisky {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  .pages {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  
+  .rightpage, .leftpage {
+    width: 100%;
+  }
