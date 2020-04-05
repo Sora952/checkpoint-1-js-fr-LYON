@@ -23,16 +23,69 @@
 
         <section class="desktop">
 
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" id="toggleImage" onclick="toggleImage();" />
+            <img id="load" onclick="" src="image/whisky.png" alt="a whisky glass" class="whisky" />
 
             <div class="pages">
-                <div class="page leftpage">
+                <div class="page leftpage">   
+                     <!-- TODO : Form -->                 
                     Add a bribe
-                    <!-- TODO : Form -->
+                    <form >
+                        <label for="Name">Name:</label><br>
+                        <input type="text" id="Name" name="Name" ><br>
+                        <label for="payment">payment</label><br>
+                        <input type="value" id="payment" name="payment"><br>
+                        <input type="submit" value="Pay!">
+                      </form> 
+                   
+
+
+
                 </div>
 
                 <div class="page rightpage">
+                    <h1 id="s">S</h1>
+                    <hr>
                     <!-- TODO : Display bribes and total payment -->
+                    <table>
+                        <tr>
+                            <td  align=right>Sam Burns</td>
+                            <td  align=right>100€</td>
+                        </tr>
+                        <tr>
+                            <td align=right>Samuel Yans</td>
+                            <td align=right>52563€</td>
+                        </tr>
+                        <tr>
+                            <td align=right>Simon Pogg</td>
+                            <td align=right>52€</td>
+                        </tr>
+                        <tr>
+                            <td align=right>Sophia Maria</td>
+                            <td align=right>452</td>
+                        </tr>
+                        <tr>
+                            <td align=right>Stacie Hunberg</td>
+                            <td align=right>568€</td>
+                        </tr>
+                        <tr>
+                            <td align=right>Steve Grant</td>
+                            <td align=right>1000€</td>
+                        </tr>
+                        <tr>
+                            <td align=right>Sylvester Stallan</td>
+                            <td align=right>77897€</td>
+                        </tr>
+                        <tr>
+                            <td align=right>Szen Tren</td>
+                            <td align=right>562€<hr></td>
+                        </tr>
+                        
+                        <tr >
+                            <td align=right>Total</td>
+                            <td align=right>141059€</td>
+                        </tr>
+                        
+                    </table>
                 </div>
             </div>
             <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
