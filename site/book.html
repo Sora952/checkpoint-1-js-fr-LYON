@@ -23,7 +23,7 @@
 
         <section class="desktop">
             <img src="image/whisky.png" alt="a whisky glass" class="whisky"/>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            
             <div class="pages">
                 <div class="page leftpage">
                     Add a bribe
@@ -36,13 +36,7 @@
                         <div class="formselect">
                             <label for="name">Payment:</label>
                         </div>
-                        <select id="payment">
-                            <option value=""></option>
-                            <option value="dog">50$</option>
-                            <option value="cat">100$</option>
-                            <option value="hamster">200$</option>
-                            <option value="parrot">500$</option>
-                        </select>
+                        <input type="number" id="payment">
                         <div class="form-example">
                           <input type="submit" value="Pay!">
                         </div>
@@ -51,9 +45,57 @@
 
                 <div class="page rightpage">
                     <!-- TODO : Display bribes and total payment -->
+                    <table>
+                        <div>
+                            <caption>S</caption>
+                        </div>
+                                                
+                        <tbody>
+                            <tr>
+                                <td>Sam Burns</td>
+                                <td>100€</td>
+                            </tr>
+                            <tr>
+                                <td>Sammuel Yans</td>
+                                <td>52563€</td>
+                            </tr>
+                            <tr>
+                                <td>Simon Pogg</td>
+                                <td>52€</td>
+                            </tr>
+                            <tr>
+                                <td>Sophia Maria</td>
+                                <td>452€</td>
+                            </tr>
+                            <tr>
+                                <td>Stacy Hunberg</td>
+                                <td>568€</td>
+                            </tr>
+                            <tr>
+                                <td>Steve Grant</td>
+                                <td>1000€</td>
+                            </tr>
+                            <tr>
+                                <td>Steve Porcher</td>
+                                <td>7865€</td>
+                            </tr>
+                            <tr>
+                                <td>Sylvester Stallan</td>
+                                <td>77897€</td>
+                            </tr>
+                            <tr>
+                                <td>Szen Tren</td>
+                                <td>562€</td>
+                            </tr>
+                            <tfoot>
+                                <td>Total</td>
+                                <td>141059€</td>
+                            </trfoot>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            
+            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
         </section>
     </main>
     <script src="./index.js"></script>

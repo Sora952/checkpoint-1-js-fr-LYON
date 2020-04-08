@@ -40,8 +40,6 @@ function findAdults(arr) {
       male.push(persons.name + persons. age);
     }
   }
-    for(let k = 0; k < persons.length; k++){
       output.push(female + "," + male);
-    }
  return output;
 }

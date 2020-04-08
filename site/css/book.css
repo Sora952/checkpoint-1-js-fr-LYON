@@ -16,14 +16,17 @@ main {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
 
-.main{
+.desktop{
     display: flex;
     flex-direction: row;
-    align-content: center;
+    align-items: flex-start;
 }
 
 .whisky{
+    display: flex;
     float: left;
+
+    
 }
 .inkpen{
     float: right;
@@ -35,6 +38,7 @@ main {
     width: auto;
     flex-basis : 65%;
     margin:1em;
+    justify-content: space-between;
 }
 
 .page {
@@ -60,18 +64,52 @@ main {
     height: 15px;
 }
 
-@media (max-width: 1100px){
+caption{
+    margin-bottom: 20px;
+    border-bottom: solid 1px #555b61;
+    margin-inline: -60px;
+}
+
+table{
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+tr{
+    text-align: right;
+}
+
+tfoot td:nth-child(2){
+    border-top: solid 1px black;
+}
+
+
+
+@media screen and (max-width:1200px){
     .inkpen{
         display:none;
     }
 }
 
-@media (min-width:800px, max-width: 1000px){
+@media screen and (max-width: 1000px){
     .whisky{
         display:none;
+    }
+
+    .desktop{
+        justify-content: center;
     }
 }
 
 @media (max-width: 800px){
-    
+    .pages{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .leftpage, .rightpage{
+        display: flex;
+        width: 100%;
+    }
 }
