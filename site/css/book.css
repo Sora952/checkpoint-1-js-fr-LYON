@@ -63,6 +63,23 @@ main {
     height: 30px;
 }
 
+.rightpage p {
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Roboto Mono', monospace;
+    border-bottom: 1px solid black;
+}
+
+table {
+    margin-top: 1em;
+    text-align: right;
+    width: 100%;
+}
+
+#border {
+    border-top: 1px solid black;
+}
+
 @media screen and (max-width: 1200px) {
     .inkpen {
         display: none;
