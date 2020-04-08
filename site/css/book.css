@@ -51,6 +51,18 @@ main {
     align-self: flex-start;
 }
 
+.leftpage form input{
+    border : none;
+    width: 80%;
+    height: 30px;
+}
+
+#pay{
+    border : none;
+    width: 20%;
+    height: 30px;
+}
+
 @media screen and (max-width: 1200px) {
     .inkpen {
         display: none;
