@@ -11,9 +11,9 @@ main {
     font-size: 26pt;
     font-family: 'Bilbo Swash Caps', cursive;
 }
+
 .desktop {
     display: flex;
-    border: 3px solid red
 }
 
 .pen {
@@ -29,7 +29,6 @@ main {
     width: auto;
     flex-basis : 65%;
     margin:1em;
-    border: 10px solid green;
     /* height: auto; */
 }
 
@@ -44,6 +43,7 @@ main {
 .leftpage {
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+    overflow: auto;
 }
 
 .rightpage {
@@ -66,6 +66,7 @@ table {
 
 tr {
     width: 70%;
+    border: 2px solid green
 }
 
 
@@ -76,6 +77,7 @@ td {
     margin-right: auto;
     font-size: 1.2em;
     padding: 5px 5px ;
+    border: 2px solid black;
 }
 
 #total {
@@ -99,14 +101,40 @@ input{
 }
 
 .payment {
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
+}
+p {
+    line-height: 0.8em;
+    /* border: 1px solid black; */
+    margin: 0.4em;
+    margin-right: 0;
+    /* padding-right: 0; */
 }
 
-p {
-    text-align:center;
+.display_bribes {
+    display: flex;
+    justify-content: flex-end;
+    /* border: 2px solid red; */
+    line-height: 0.6em;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
     margin-bottom: 0;
-    border: 2px solid red;
 }
+
+.money{
+    width: 30%;
+    text-align: end;
+    margin-right: 0;
+    margin-left: 2em;
+    /* border: 2px solid blue; */
+}
+
+.stren {
+    border-bottom: 2px solid black;
+    padding-bottom: 0.4em;
+}
+
 
 @media only screen and (min-width: 1100px) and (max-width:1200px) {
     .desktop {
@@ -116,14 +144,44 @@ p {
     .pen {
         display: none;
     }
-
+/* 
     .pay {
         font-size: 0.5em;
-    }
+    } */
 
-    td {
-        font-size: 1.25em;
+    p {
+        line-height: 0.8em;
+        /* border: 1px solid black; */
+        margin: 0.5em;
+        margin-right: 0.5em;
+        font-size: 28px;
+        /* padding-right: 0; */
     }
+    
+    .display_bribes {
+        display: flex;
+        justify-content: flex-end;
+        /* border: 2px solid red; */
+        line-height: 0.6em;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .money{
+        width: 30%;
+        text-align: end;
+        margin-right: 0;
+        margin-left: 2em;
+        /* border: 2px solid blue; */
+    }
+    
+    .stren {
+        border-bottom: 2px solid black;
+        padding-bottom: 0.4em;
+    }
+    
 
 }
 
