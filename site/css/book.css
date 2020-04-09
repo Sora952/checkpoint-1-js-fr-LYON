@@ -48,6 +48,39 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+.rightpage p {
+    margin-block-start:0;
+    margin-block-end:0;
+    text-align:center;
+    font-family:'Roboto Mono', monospace;
+    border-bottom:1px solid black;
+}
+.rightpage table {
+    text-align:right;
+}
+.rightpage table tbody tr th {
+    font-weight:lighter;
+}
+.rightpage table tbody tr:nth-child(10) th:nth-child(2) {
+    border-top:1px solid black;
+}
+input[type=text], input[type=number] {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+}
+label {
+    font-size:28px;
+}
+input[type=submit] {
+    border:none;
+    border-radius:5px;
+    height:30px;
+    width:50px;
 }
 
 @media all and (min-width:1100px) and (max-width:1200px) {
