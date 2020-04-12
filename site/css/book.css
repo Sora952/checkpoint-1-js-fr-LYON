@@ -2,19 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 
-
 body {
 
     background-image: url('../image/background.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 main {
-    display: flex;
     padding-top: 4em;
     font-size: 26pt;
-    font-family: 'Bilbo Swash Caps', cursive;
 }
 
 
@@ -52,32 +50,60 @@ main {
 }
 
 .page {
-
+    display: flex;
     height: 65vh;
     padding: 3vw;
     width: 50%;
     background-blend-mode: multiply;
+    font-family: 'Bilbo Swash Caps', cursive;
 
 }
 
 .leftpage {
+    display: flex;
+
+    flex-direction: column;
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157, 158, 137, 1) 0%, rgba(233, 226, 187, 1) 5%, rgba(255, 251, 203, 1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
 }
 
 .rightpage {
+    display: flex;
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157, 158, 137, 1) 0%, rgba(233, 226, 187, 1) 5%, rgba(255, 251, 203, 1) 18%);
     border-radius: 40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+    flex-direction: column;
+  
 }
 
-.leftpage {
-    font-family: 'Dancing Script', cursive;
+table{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
-form {
+td{
+    padding: 0 20px;
+}
+
+h2{
+    margin: 0;
+    text-align: center;
+    font-family: serif;
+    font-size: 18px;
+}
+
+
+.form {
     display: flex;
     flex-direction: column;
+    
+
+}
+input {
+    border: none;
+    padding: 5px;
+    width: 100%;
 }
 
 button {
@@ -95,15 +121,19 @@ button {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 
     .whisky {
         display: none;
        
     }
+    .pages{
+        flex-basis: 100%;
+    }
+
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 800px) {
 
     .pages {
         display: flex;
@@ -112,7 +142,10 @@ button {
     }
 
     .page {
-
-        width: 100%;
+        width: auto;
     }
+    table{
+        justify-content: center;
+    }
+
 }
