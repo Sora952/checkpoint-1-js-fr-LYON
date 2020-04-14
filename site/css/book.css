@@ -7,7 +7,7 @@ body {
 }
 
 main {
-    padding-top: 4em;
+    padding-top: 2em;
     font-size: 26pt;
     font-family: 'Bilbo Swash Caps', cursive;
 }
@@ -26,7 +26,7 @@ main {
 .page {
     height:65vh;
     padding: 3vw;
-    width: 50%;
+    width: 80%;
     background-blend-mode: multiply;
 }
 
@@ -92,7 +92,7 @@ main {
 /* Ajout des éléments sur le livre */
 form {
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
 }
 
 input, select {
@@ -115,35 +115,20 @@ h3 {
     margin: 0;
 }
 
-ul > li {
-    list-style-type: none;
-    font-size: 24px;
+tbody tr td {
     text-align: right;
+    font-size: 22px;
 }
 
-.paymentList {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    bottom: 50px;
-}
-
-.trait {
-    height: 2%;
+table {
     width: 100%;
-    position: relative;
-    bottom: 20px;
 }
 
-.traitSmall {
-    height: 2%;
-    width: 40%;
-    margin-left: 60%;
-    position: relative;
-    bottom: 100px;
+table caption {
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
 }
 
-#totalPayment {
-    position: relative;
-    bottom: 150px;
+#last-line {
+    border-bottom: 1px solid black;
 }

@@ -37,12 +37,7 @@
 
                         <div class="selectForm">
                             <label>Payment</label>
-                            <select>
-                                <option></option>
-                                <option>Payment done</option>
-                                <option>In progress</option>
-                                <option>Not yet</option>
-                            </select>
+                            <input type="number" min=0 />
                         </div>
 
                         <button>Pay !</button>
@@ -50,52 +45,51 @@
                 </div>
 
                 <div class="page rightpage">
-                    <!-- TODO : Display bribes and total payment -->
-                    <h3>S</h3>
-                    <img src="image/trait.png" class="trait" alt="trait-separating" />
-                    <section class="paymentList">
-                        <div class="names">
-                            <ul>
-                                <li>Sam Burns</li>
-                                <li>Samuel Yans</li>
-                                <li>Simon Pogg</li>
-                                <li>Sophia Maria</li>
-                                <li>Stacie Hunberg</li>
-                                <li>Steve Gant</li>
-                                <li>Steve Porcher</li>
-                                <li>Sylvester Stallan</li>
-                                <li>Szen Tren</li>
-                            </ul>
-                        </div>
-                        <div class="payments">
-                            <ul>
-                                <li>100€</li>
-                                <li>52563€</li>
-                                <li>452€</li>
-                                <li>452€</li>
-                                <li>568€</li>
-                                <li>1000€</li>
-                                <li>7865€</li>
-                                <li>77897€</li>
-                                <li>562€</li>
-                            </ul>
-                        </div>
-                    </section>
-                    <img src="image/trait.png" class="traitSmall" alt="trait-separating" />
-                    <section class="paymentList" id="totalPayment">
-                        <div>
-                            <ul>
-                                <li>Total</li>
-                            </ul>
-                        </div>
-                            <ul>
-                                <li>141059€</li>
-                            </ul>
-                        <div>
-
-                        </div>
-                    </section>
-
+                    <table>
+                        <caption>S</caption>
+                        <tbody>
+                            <tr>
+                                <td>Sam Burns</td>
+                                <td>100€</td>
+                            </tr>
+                            <tr>
+                                <td>Samuel Yans</td>
+                                <td>52563€</td>
+                            </tr>
+                            <tr>
+                                <td>Simon Pogg</td>
+                                <td>52€</td>
+                            </tr>
+                            <tr>
+                                <td>Sophia Maria</td>
+                                <td>452€</td>
+                            </tr>
+                            <tr>
+                                <td>Stacie Hunberg</td>
+                                <td>568€</td>
+                            </tr>
+                            <tr>
+                                <td>Steve Grant</td>
+                                <td>1000€</td>
+                            </tr>
+                            <tr>
+                                <td>Steve Porcher</td>
+                                <td>7865€</td>
+                            </tr>
+                            <tr>
+                                <td>Sylvester Stallan</td>
+                                <td>77897€</td>
+                            </tr>
+                            <tr>
+                                <td>Szen Tren</td>
+                                <td id="last-line">562€</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td>141059€</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
