@@ -4,7 +4,7 @@
 
 >Pour les commandes de bases il y à ls pour lister le contenu du dossier, mkdir pour créer un dossier, touch pour en créer, mv pour déplacer/renomé, cp pour copier ect...
 
->Pour les droits le chmod et le chown permettent (d'invoquer un gobelin euh...) de gérer les droits (chmod permet de gérer les r (read) x (execute) d (dossier) w (write) ) et chown de changer le propriétaire d'un dossier ou le groupe. Sudo permet d'exécuté de force n'importe quel commande en tant qu'admin système.
+>Pour les droits le chmod et le chown permettent ~(d'invoquer un gobelin euh...)~ de gérer les droits (chmod permet de gérer les r (read) x (execute) d (dossier) w (write) ) et chown de changer le propriétaire d'un dossier ou le groupe. Sudo permet d'exécuté de force n'importe quel commande en tant qu'admin système.
 
 >Pour le multi tache ps permet de lister les processus, top permet de faire comme le gestionnaire de tache windows avec un affichage dynamique, et kill permet de communiquer avec un processus, l'arrêter voir le tuer en cas de soucis.
 
@@ -39,3 +39,33 @@
 >Pour les pratiques suffit par ex de mettre un alt sur les images pour les lecteurs d'écran, de faire attention sur certaines syntaxe dans les forms, bien mettre les labels ect
 
 >Pour les règles, je connais le validateur W3C et suffit de lui donner son code et de corriger les erreurs, et de bien indenté le code que ça soit lisible
+
+### ES6+
+
+>Pour les templates c'est ça `string à écrire ${variable} texte suivant` le spread et le reste se font avec ...variable qui "explose" des choses comme un objet ou un tableau et ça permet de destructuré facilement.
+
+>Pour les fonctions anonymes c'est une fonction dans une variable, les fonctions fléchés se font avec => code et les callbacks sont les fonctions appeller dans un retour de fonction ou dans les paramètres d'une autre fonction
+
+>Pour les évenements JS on à l'écouteur d'évenment principalement qui s'écrit .addEventListener('type de l'évenement', fonction à faire => code)
+
+>Pour le DOM c'est domotic object model et c'est un peu le navigateur qui parse le HTML et renvoie un gros objets contenant des objets textuels et des objets ayant des enfants (les balises)
+
+>Pour les scopes c'est la portée par ex une const déclaré dans une fonction ça ne peut pas se lire hors de cette dernière
+
+>Pour les class ça s'écrit class nom {code} mais on peut aussi faire des classes étendues d'autres classes, des classes avec un constructor pour y passé plusieurs paramètres ect
+
+>Pour l'IDE j'utilise que ça, ainsi que standard js 
+
+ ### React
+
+>Pour le JSX c'est un mélange de xml et de react ce qui ressemble à envoyer des balises HTML avec des variables de react pour généré une page plus facilement
+
+>Pour le déboggeur c'est installé et utile, me faut juste la prise en main mais je sais l'utiliser
+
+>Pour le composant fonctionnel en fait c'est une fonctions qui reçois les props d'un évenement ou autre et qui permet de rendre react dynamique, même si les class sont encore plus dynamique et pour les fonctions il faut plutôt des hooks 
+
+>Pour l'affichage conditionel il y a surtout l'opérateur ternaire comme {favorite ? 'favorite' : '' } pour par exemple l'étoile de la quête simpson quotes
+
+>Pour les composants avec map cela s'utilise surtout avec un tableau ou un objet et avec map on le parse pour lui effectuer un "calcule" et ensuite créer un nouveau tableau (tableau.map(paramètre => code)
+
+>Pour finir, pour le routing on la mis dans notre P2 ! C'est avec react router, à installer séparément, on peut même mettre des variables pour l'URL avec /:VariableName c'est top !
