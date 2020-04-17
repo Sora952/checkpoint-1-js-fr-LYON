@@ -1,4 +1,4 @@
-# Revue des notions "en cours d'acquisition
+# Revue des notions "en cours d'acquisition"
 
 ## UNIX
 
@@ -26,4 +26,4 @@ Puis mis en pratique sur les 4 user stories suivantes, le workflow est clair.
 
 ### Savoir implémenter un routing
 
-Vu lors du P2. Implémentation d'un routing pour rediriger vers la bonne page au clic sur le bouton de lancement d'une session. Mis en place à 4, pour que tout le monde comprenne bien, c'est clair. 
+Vu lors de la première semaine du P2. Implémentation d'un routing pour rediriger vers la bonne page au clic sur le bouton de lancement d'une session. Mis en place à 4, pour que tout le monde comprenne bien, c'est clair. 
