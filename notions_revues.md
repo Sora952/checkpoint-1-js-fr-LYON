@@ -20,9 +20,10 @@ pour les mettre à jour.
 ### Faire relire mon code avec une PR
 
 Pratiquée avec l'équipe du projet 2, première user story (us1) réalisée en peer programming avec Mickaël, pushé sur notre branche de features et pull request assignée à Christophe, après relecture, la PR est assignée à Pierre pour être mergée dans Dev.
+Puis mis en pratique sur les 4 user stories suivantes, le workflow est clair.
 
 ## React
 
 ### Savoir implémenter un routing
 
-Vu lors du P2. Implémentation d'un routing pour rediriger vers la bonne page au clic sur le bouton de lancement d'une session.
+Vu lors du P2. Implémentation d'un routing pour rediriger vers la bonne page au clic sur le bouton de lancement d'une session. Mis en place à 4, pour que tout le monde comprenne bien, c'est clair. 
