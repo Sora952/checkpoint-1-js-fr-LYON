@@ -4,7 +4,7 @@
 
 ### Savoir gérer les droit (sudo, chown, chmod)
 
-Pour tester cette commande, j'ai créé un nouvel user de test pour voir et changer ses droits 
+Pour tester ces commandes, j'ai créé un nouvel user de test pour voir et changer ses droits 
 ```bash 
 sudo adduser test
 ```
@@ -40,6 +40,14 @@ amelie@amelie-ThinkPad-T430s:~$ su test
 ```
 possible d'écrire dans test.txt.
 
+utilisation de chown pour mettre test en owner du fichier test
+```bash
+amelie@amelie-ThinkPad-T430s:~$ sudo chown test test.txt
+[sudo] Mot de passe de amelie : 
+amelie@amelie-ThinkPad-T430s:~$ ll test.txt
+-rw-rw-rw- 1 test amelie 6 avril 19 09:34 test.txt
+```
+
 ### Savoir gérer les paquets et mettre à jour le système
 
 utilsation des commandes: 
@@ -49,6 +57,44 @@ qui m'a indiquée que 29 paquets pouvaient être mis à jour, donc suivi de
 pour les mettre à jour.
 
 ### Gérer les processus et le multi-tâches  (ps, top, kill...)
+
+Afficher les processus en cours
+```bash
+amelie@amelie-ThinkPad-T430s:~$ ps
+  PID TTY          TIME CMD
+24911 pts/1    00:00:00 bash
+26358 pts/1    00:00:00 zsh
+26687 pts/1    00:00:00 bash
+27028 pts/1    00:00:00 zsh
+27305 pts/1    00:00:00 bash
+29197 pts/1    00:00:00 zsh
+31055 pts/1    00:00:00 bash
+31465 pts/1    00:00:00 ps
+```
+Pour la rendre plus détaillée
+```bash
+ps aux
+```
+Pour filter un processus, possible de filtrer la sortie en la redirigeant vers un grep 
+```bash
+amelie@amelie-ThinkPad-T430s:~$ ps
+  PID TTY          TIME CMD
+  514 pts/1    00:00:00 ps
+24911 pts/1    00:00:00 bash
+26358 pts/1    00:00:00 zsh
+26687 pts/1    00:00:00 bash
+27028 pts/1    00:00:00 zsh
+27305 pts/1    00:00:00 bash
+29197 pts/1    00:00:00 zsh
+31055 pts/1    00:00:00 bash
+amelie@amelie-ThinkPad-T430s:~$ ps | grep 27028
+27028 pts/1    00:00:00 zsh
+```
+
+La commande ```top``` domme les mêmes info que ps mais en temps réel, on peut lui donner un délai de rafraichissement avec -d. Par exemple ```top -d 10``` fera un rafaichissement toutes les 10 secondes.
+
+```kill``` permet de terminer manuellement un processus grâce à son id
+on fait ```ps aux```, on récupère l'id et on fait ```kill [id]```
 
 
 ## Git
