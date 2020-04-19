@@ -53,11 +53,13 @@ ES6+ (fléchées, destructuring, spread operator, rest parameters...) :
 
 Créer un composant sous forme de classe (stateful) :
 
-class Myclass {
-  constructor(a, b) {
-    this.a = a;
-    this.b = b;
-  }
+class Myclass extends Components {
+   constructor(props) {
+    super(props);
+    this.state = {}
+   }
+
+   render(){ return() }
 }
 
 
