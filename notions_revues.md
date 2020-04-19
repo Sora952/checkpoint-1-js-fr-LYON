@@ -5,25 +5,39 @@
 ### Savoir gérer les droit (sudo, chown, chmod)
 
 Pour tester cette commande, j'ai créé un nouvel user de test pour voir et changer ses droits 
-```sudo adduser test```
+```bash 
+sudo adduser test
+```
 sous l'utilisateur amélie, création d'un fichier text test
-```amelie@amelie-ThinkPad-T430s:~$ touch test.txt```
-```amelie@amelie-ThinkPad-T430s:~$ ll test.txt```
-```-rw-rw-r-- 1 amelie amelie 0 avril 19 09:30 test.txt```
-la commande ls -l m'indique que les autres user que amelie n'auront pas les droits d'écriture sur ce fichier
+```bash
+amelie@amelie-ThinkPad-T430s:~$ touch test.txt
+amelie@amelie-ThinkPad-T430s:~$ ll test.txt
+-rw-rw-r-- 1 amelie amelie 0 avril 19 09:30 test.txt
+```
+la commande ls -l m'indique que les autres user que amelie n'auront pas les droits d'écriture sur ce fichier.
 passage sur le user test
-```amelie@amelie-ThinkPad-T430s:~$ su test```
+```bash
+amelie@amelie-ThinkPad-T430s:~$ su test
+```
 impossible d'écrire dans le fichier test.txt
-```test@amelie-ThinkPad-T430s:/home/amelie$ ll test.txt```
-```-rw-rw-r-- 1 amelie amelie 0 avril 19 09:30 test.txt```
+```bash
+test@amelie-ThinkPad-T430s:/home/amelie$ ll test.txt
+-rw-rw-r-- 1 amelie amelie 0 avril 19 09:30 test.txt
+```
 passage sur amelie pour donner les droits à test
-```test@amelie-ThinkPad-T430s:/home/amelie$ su amelie```
+```bash
+test@amelie-ThinkPad-T430s:/home/amelie$ su amelie
+```
 changement des droits en read and write pour amelie, le groupe, et les autres
-```amelie@amelie-ThinkPad-T430s:~$ chmod 666 test.txt```
-```amelie@amelie-ThinkPad-T430s:~$ ll test.txt```
-```-rw-rw-rw- 1 amelie amelie 0 avril 19 09:30 test.txt```
+```bash
+amelie@amelie-ThinkPad-T430s:~$ chmod 666 test.txt
+amelie@amelie-ThinkPad-T430s:~$ ll test.txt
+-rw-rw-rw- 1 amelie amelie 0 avril 19 09:30 test.txt
+```
 les droits sont changés, passage sur test pour vérifier
-```amelie@amelie-ThinkPad-T430s:~$ su test```
+```bash
+amelie@amelie-ThinkPad-T430s:~$ su test
+```
 possible d'écrire dans test.txt.
 
 ### Savoir gérer les paquets et mettre à jour le système
