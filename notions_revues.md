@@ -8,7 +8,7 @@ Pour tester ces commandes, j'ai créé un nouvel user de test pour voir et chang
 ```bash 
 sudo adduser test
 ```
-sous l'utilisateur amélie, création d'un fichier text test
+sous l'utilisateur amelie, création d'un fichier text test
 ```bash
 amelie@amelie-ThinkPad-T430s:~$ touch test.txt
 amelie@amelie-ThinkPad-T430s:~$ ll test.txt
