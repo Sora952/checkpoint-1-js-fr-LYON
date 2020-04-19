@@ -15,12 +15,16 @@
 Je n'avais et n'ai toujours pas retenu ces principes dans leurs détails les plus fins mais, étant logiques, j'ai tendance à les appliquer sans me poser plus de questions que cela.
 
 **32 Connaître les différents métiers du developpement web (ESN, agence web, freelance...)**
+>Recherches faites.
+> - Une ESM place des développeurs chez des clients ou propose des prestations dans ses locaux.
+> - Une agence web est spécialisée dans les différentes formes de communications et de la promotion du web. Elle gère la réalisation d'un site, la communication, la publicité, etc.
+> - Quant au freelance, c'est une personne qui vend ses services à une entreprise ou à un particulier. Il est aux services intellectuels ce qu'est un artisan aux services manuels (sans aucun manque de respect pour ces derniers de ma part).
 
 
 ### Javascript
 
->63 Orienté Objet en ES6(Classe, Inheritance, Interface, Staticité)
-
+**63 Orienté Objet en ES6(Classe, Inheritance, Interface, Staticité)**
+> ?
 
 ## Notions acquises depuis l'entretien du 10 avril 2020
 
