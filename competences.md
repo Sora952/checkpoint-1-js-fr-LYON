@@ -186,6 +186,39 @@ Cet exemple va mettre fin à l'exécution du processus répondant au PID "1234".
 
 # Savoir utiliser les tags de Git
 
+Il est possible avec git d'attribuer un tag à un commit pour l'identifier plus facilement. Généralement, on leur donne un numéro de version. 
+
+Pour lister les tags existant, on utilise la commande suivante : 
+
+```shell $ git tag```
+
+Les tags affichés sont listés par ordre alphabétique. 
+
+On distingue deux types de tags : 
+
+1. Les tags légers
+1. Les tags annotés
+
+## Tags légers
+
+Les tags légers ressemblent à une branche, à la différence de cette dernière qu'ils ne changeront jamais. Il permet simplement de nommer un commit en particulier.
+
+Pour créer un tag léger, on utilise la commande suivante : 
+
+```shell $ git tag numéro_version```
+
+## Tags annotés 
+
+Les tags annotés sont stockés en tant qu'objet et peuvent donc contenir diverses informations comme le nom et l'adresse e-mail de son créateur, la date du commit en question ou un message en particulier.
+
+Pour créer une étiquette annotées, on utilise la commande suivante :
+
+```shell $ git tag -a numéro_version -m "message"```
+
+L'option -a sert à attribuer un numéro de version au tag. L'option -m permet quant à elle de préciser un message entre guillemet.
+
+Pour afficher les données d'un commit tagué, on utilise la commande ```shell $ git show numéro_version```
+
 # Faire des commits atomiques correctement commentés et des PR de taille humaine
 
 # Utiliser un framwork CSS
