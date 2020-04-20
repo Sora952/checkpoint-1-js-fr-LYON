@@ -219,17 +219,53 @@ L'option -a sert à attribuer un numéro de version au tag. L'option -m permet q
 
 Pour afficher les données d'un commit tagué, on utilise la commande ```shell $ git show numéro_version```
 
-# Faire des commits atomiques correctement commentés et des PR de taille humaine
+# Faire des commits atomiques correctement commentés
+
+Les commits atomiques consistent en la ségmentation d'un travail en petites tâches. Utiliser l'approche des commits atomiques revient donc à faire régulièrement de petits commits. 
+
+## Avantages
+
+En cas de bug, il est plus facile d'en déterminer la source si plusieurs petits commits ont été réalisés tout au long du projet, plutôt que de gros commits. Les commentaires ajoutés aux commits sont également indispensable pour comprendre précisément à quoi ils correspondent.
+
+Faire des commits atomiques bien commentés permet donc de gérer plus simplement et plus rapidement les problèmes.
+
+#  Faire des PR de taille humaine
+
+Une Pull Request consiste à demander au détenteur d'un dépôt Git de prendre en compte les modifications apportées sur un fork. 
+
+Faire des PR de taille humaine représente donc un gain de temps important du point de vue du détenteur du dépôt puisqu'il pourra plus rapidement vérifier et tester les modifications envoyées. 
 
 # Utiliser un framwork CSS
 
+Un framwork, en programmation, consiste en un ensemble de composants permettant de créer un logiciel. Un Framwork CSS pose donc un cadre quant au design d'une application web.
+
 ## Bootstrap
+
+Bootstrap est probablement le plus connu des framworks CSS. Il propose : 
+
+* Une mise en page basée sur une grill de 12 colonnes. Leur nombre est bien sûr configurable selon les besoins
+* Une bibliothèque entièrement open source
+* Un code tenant compte des problématiques de responsive design
+* La garantie d'une compatibilité avec la majorité des navigateurs
+* Une documentation très complète
 
 ## Materialize CSS
 
-## Connaître les pré-processeur de code CSS
+Materialize CSS est un autre framwork CSS proposant : 
+
+* Un code répondant aux problèmatiques de responsive design
+* Une compatibilité avec la majorité des navigateurs
+* Un design dans le style du Material Design
+
+## Connaître les préprocesseur de code CSS
+
+Un préprocesseur CSS est un outil permettant de générer dynamiquement des fichiers CSS. Il vise donc à améliorer l'écriture des fichiers CSS. 
+
+Il intervient, comme son nom l'indique, avant le traitement des fichiers CSS par les navigateurs web. Il existe plusieurs préprocesseur CSS comme SCSS, LESS, etc...
 
 # SCSS
+
+Le SCSS permet d'écrire plus rapidement du CSS et se rapproche davantage d'un langage de programmation. L'avantage du SCSS est qu'il est totalement compatible avec du CSS standard. Un fichier .css peut donc être renommé avec l'extension .scss et continuera de fonctionner normalement.
 
 # Connaître les différents métiers du développement web
 
