@@ -25,7 +25,26 @@ $ sudo -k
 
 ## Chown
 
+### Définition
 
+La commande chown correspond à l'abréviation de **ch**ange the **own**er et permet de changer le propriétaire d'un fichier ou d'un dossier.
+
+### Utilisation
+
+La commande chown prend la syntaxe suivante :
+
+```shell  chown nouveau_propriétaire nom_du_fichier```
+
+Elle peut prendre plusieurs options dont les suivantes : 
+
+* ```shell -R``` : opère le changement sur tous les fichiers et sous-dossiers du dossier choisi de manière récursive
+* ```shell -v``` : décrit les changements de propriétaire
+* ```shell --version``` : donne le numéro de la version de chown
+* ```shell -c, --changes``` : ne décrit que les fichiers dont le propriétaire est modifié
+
+### Exemple
+
+```shell chown geoffroy /home/dossier-important``` : fait de l'utilisateur "geoffroy" le nouveau propriétaire du dossier "dossier-important".
 
 ## Chmod
 
