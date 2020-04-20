@@ -30,8 +30,14 @@ const scores = [
   "3:4"
 ];
 
-function getPoints(array) {
+function getPoints (array) {
   // Your code here !
+  let somme = 0;
+  scores.forEach(index => {
+    const number = Number(index[0]);
+    somme = somme + number;
+});
+  return Math.round(somme / 2);
 }
 
 console.log(getPoints(scores));
