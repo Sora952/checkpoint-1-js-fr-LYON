@@ -12,6 +12,32 @@ sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ) doit renvoyer ["4", "11", "
 
 */
 
-function sumArr(arrayA, arrayB) {
+function sumArr (arrayA, arrayB) {
   // Your code here !
+  let longArr = [];
+  if (arrayA.length >= arrayB.length) {
+    longArr = arrayA;
+  } else {
+    longArr = arrayB;
+  }
+
+  const outputArray = [];
+  for (let i = 0; i < longArr.length; i++) {
+    if (typeof arrayA[i] === 'undefined') {
+      outputArray.push(Number(arrayB[i]));
+    } else if (typeof arrayB[i] === 'undefined') {
+      outputArray.push(Number(arrayA[i]));
+    } else {
+      outputArray.push(Number(arrayA[i]) + Number(arrayB[i]));
+    }
+  }
+
+  for (let i = 0; i < outputArray.length; i++) {
+    outputArray[i] = outputArray[i].toString();
+  }
+  return outputArray;
 }
+
+console.log(sumArr(["1", "2", "3"], ["2", "4", "1"]));
+console.log(sumArr(["2", "7", "3"], ["2", "4", "9"]));
+console.log(sumArr(["2", "7", "3", "8", "2"], ["2", "4", "9"]));
