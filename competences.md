@@ -133,11 +133,56 @@ Elles se donnent de la manière suivantes :
 
 # Gérer les processus et le multi-tâche
 
-## Ps
+Ont dit d'un système d'exploitation comme Unix qu'il est multi-tâche car plusieurs programmes semblent s'exécuter simultanément. 
 
-## Top
+En effet, étant donné qu'un seul processeur ne peut éxecuter qu'une instruction à la fois, il est dans les fait impossible de lui demander d'en éxecuter plusieurs en même temps. Si plusieurs programmes sont lancés en même temps, la machine leur accordera tour à tour les ressources nécessaires selon le principe du *time sharing* (partage du temps).
 
-## Kill
+Un système devra donc définir les programmes à exécuter en priorité pour répondre correctement aux attentes de son utilisateur.
+
+## La commande ```shell ps```
+
+Cette commande permet d'obtenir des informations sur les processus actifs sur le système. 
+
+Une fois l'affichage long activé grâce aux options, la commande ps donnera entre autre les renseignements suivants : 
+
+* Date de lancement
+* Taille du processus
+* Ligne de commande
+* Propriétaire
+* Priorité
+
+## La commande ```shell top```
+
+La commande top permet de lancer un gestionnaire de tâches qui liste en temps réel les processus et les ressources qui leurs sont consacrées.
+
+## La commande ```shell kill```
+
+### Définition
+
+Avant de s'intéresser à la commande Kill, il faut comprendre ce qu'est un signal. 
+
+Un signal n'est autre qu'un message envoyé à un processus. Chaque signal correspond à un évènement particulier. Il peut s'agir par exemple de demander l'interruption d'un processus 
+
+La commande ```shell kill``` a deux fonctions principales : 
+
+* Obtenir la liste des signaux disponibles sur le système
+* Envoyer un signal à un ou plusieurs processus
+
+Par défaut, la commande kill envoi un signal demandant l'interruption d'un processus en cours d'exécution. 
+
+### Utilisation 
+
+La syntaxe la plus simple de la commande Kill est la suivante : 
+
+```shell kill PID_du_processus```
+
+Chaque processus répond en effet à un identifiant PID qui lui correspond.
+
+### Exemple
+
+```shell kill 1234```
+
+Cet exemple va mettre fin à l'exécution du processus répondant au PID "1234".
 
 # Savoir utiliser les tags de Git
 
