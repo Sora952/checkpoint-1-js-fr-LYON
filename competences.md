@@ -107,13 +107,37 @@ Elles se donnent de la manière suivantes :
 
 # Gérer les paquets et mettre à jour le système
 
+## Mettre à jour la liste des paquets
+
+```shell $ sudo apt update```
+
+## Afficher les paquets pour lesquels une mise à jour est disponible
+
+```shell $ sudo list --upgradable ```
+
+## Mettre à jour les paquets sans ajouter ou supprimer des paquets
+
+```shell $ sudo apt upgrade```
+
+## Mettre à jour des paquets en supprimant des paquets si nécessaire pour en installer de nouvelles versions
+
+```shell $ sudo apt full-upgrade```
+
+## Supprimer les paquets devenus obsolètes
+
+```shell $ sudo apt autoremove```
+
+## Supprimer le cache des paquets qui ne peuvent plus être réléchargés
+
+```shell sudo apt autoclean ```
+
 # Gérer les processus et le multi-tâche
 
-# Ps
+## Ps
 
-# Top
+## Top
 
-# Kill
+## Kill
 
 # Savoir utiliser les tags de Git
 
