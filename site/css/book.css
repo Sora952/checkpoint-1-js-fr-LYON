@@ -33,38 +33,30 @@ main {
     margin:1em;
 }
 
-form {
-  padding-left: 30px;
-}
-
-.input, button {
-  box-sizing: border-box;
-  border: none;
-}
-
-button {
-  width: 20%;
+input, button {
+  /* border: white; */
   height: 70%;
 }
 
-.zonePayments {
+/* button {
+  width: 20%;
+} */
 
-  text-align: justify;
-}
+fieldset {
 
-li {
-  list-style-type: none;
-}
-
-.Transactions {
-  display: flex;
-  justify-content: flex-end;
+  border: none;
 }
 
 .sUpper {
 
   text-align: center;
   margin: auto;
+}
+
+table {
+  text-align: right;
+  padding: 8px 16px;
+  /* text-overflow: ; */
 }
 
 .totalEuros {
