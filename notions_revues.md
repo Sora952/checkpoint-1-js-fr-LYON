@@ -134,8 +134,8 @@ Sass (le plus commun) :
 Ce sont les bonnes pratiques de référencement naturel (par opposition au référencement sponsorisé).
 Pratiques de bases : 
 - Vérfier que l'indexation des pages n'est pas bloquée
-- Balises META <title> courte
-- Balise META <description> plus longue qui donne envie de cliquer
+- Balises META title courte
+- Balise META description plus longue qui donne envie de cliquer
 - Url compréhensibles par un humain et pas trop long
 - Contenu riche (en nombre de mot et en vocabulaire utlisé)
 - Utiliser des images, avec des alt et title, pas trop lourde pour charger vite
