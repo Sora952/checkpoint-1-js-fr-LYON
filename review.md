@@ -30,6 +30,7 @@ With no options, ps outputs the long format by default
 >- Le programme top fournit une vue dynamique temps réel du système en cours d'exécution. Il
        peut afficher un résumé des informations du système aussi bien qu'une liste  de  processus
        ou  tâches  gérés  sur le moment par le noyau:
+>- La commande top vous permet d'afficher des informations en continu sur l'activité du système. Elle permet surtout de suivre les ressources que les processus utilisent (quantité de RAM, pourcentage de CPU, la durée de ce processus depuis son demarrage).       
 
 
 
