@@ -1,6 +1,7 @@
 ## Compétences à acquérir
 
 ### 1 - Gérer les processus et le multi-tâche (ps, top, kill ...)
+** Ps **
 >- Ps présente un cliche instantané des processus  en  cours.
 >- Pour obtenir  un  affichage  remis  à jour régulièrement,utilisez top.
 >- Ps help permet de lister les commandes utile
@@ -25,6 +26,12 @@ Report process status
 With no options, ps outputs the long format by default
 
 ````
+** top **
+>- Le programme top fournit une vue dynamique temps réel du système en cours d'exécution. Il
+       peut afficher un résumé des informations du système aussi bien qu'une liste  de  processus
+       ou  tâches  gérés  sur le moment par le noyau:
+
+
 
 ### 2 - Savoir utiliser les tags de Git
 
