@@ -1,4 +1,4 @@
-# Revue des notions "en cours d'acquisition"
+# Revue des notions "en cours d'acquisition" et "à acquérir"
 
 ## UNIX
 
@@ -103,6 +103,32 @@ on fait ```ps aux```, on récupère l'id et on fait ```kill [id]```
 
 Pratiquée avec l'équipe du projet 2, première user story (us1) réalisée en peer programming avec Mickaël, pushé sur notre branche de features et pull request assignée à Christophe, après relecture, la PR est assignée à Pierre pour être mergée dans Dev.
 Puis mis en pratique sur les 4 user stories suivantes, le workflow est clair.
+
+
+## Intégration
+
+### Connaître les pré-processeurs de code CSS
+
+Ce sont des outils (ou programme) qui permettent de gérer dynamiquement les fichiers CSS. Ils interviennent avant le traitement des fichiers CSS par le navigateur web. L'objectif est d'ajouter des fonctionnalités (par exemple des variables) pour permettre au développeur de mieux structurer son code.
+Les plus connus : Sass, LESS, Stylus.
+Au moment où ils ont été créé, on ne pouvait pas faire autant de chose qu'aujourd'hui en CSS pur (variables, mixins).
+Mais même si on peut faire plus de choses en CSS maintenant, il y a toujours des différences : 
+- syntaxe des variables
+- support des navigateurs
+Amènent aussi des choses qui n'existent pas en css:
+- conditions
+- boucles
+- classes utilitaires
+...
+
+Sass (le plus commun) :
+
+.sass : écriture différente du css classique
+.scss : même écriture que le css classique avec fonctionnalités en plus
+
+
+### Respecter les bonnes pratiques SEO
+
 
 ## React
 
