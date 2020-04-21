@@ -279,27 +279,107 @@ Entre deux mission, on dit du consultant qu'il est en "intercontrat", période d
 
 Contrairement aux ESN, les agences web gèrent en interne une partie ou l'intégralité d'un projet web. Elle est donc composé de nombreux profils (rédacteurs, community managers, graphistes, développeurs, responsable SEO etc...) qu'elle mettra au service des projets qu'elle doit réaliser pour ses clients. 
 
-## Freelance
-
 # ES6+
 
 ## Fonctions fléchées
 
+Les fonctions fléchées ont été introduite dans ES6+ et permettent de réduire l'écriture des fonctions comprenant un ```javascript return```
+
+Ainsi, les deux fonctions suivantes sont équivalentes : 
+
+```javascript const ES5 = function(x, y) { return x + y; }```
+```javascript const ES6 = (x) => { x + y }```
+
 ## Destructuring
+
+Le destructuring consiste à assigner des variables provenant d'un objet ou d'un tableau.
+
+Prenons l'objet suivante : 
+
+```javascript const myObject = { num1: 1, num1: 2 }```
+
+Si en ES5, il fallait assigner les valeurs num1 et num2 à des variables pour les retourner, cela n'est plus nécessaire avec le destructuring.
+
+```javascript 
+// ES5
+var num1 = myObject.num1;
+var num2 = myObject.num2;
+
+num1; // 1
+num2; // 2
+```
+
+```javascript 
+// ES6
+const { num1, num2 } = myObject;
+
+num1; // 1
+num2; // 2
+```
 
 ## Spread operator
 
+Le Spread Operator permet de récupérer facilement chaque élément d'un tableau. 
+
+Par exemple : 
+
+```javascript 
+let numbers1 = [1, 2, 3, 4];
+let numbers2 = [5, 6, ,7, 8];
+
+numbers1.push(...numbers2); // On ajoute chaque élément de l'array numbers2 à la suite de ceux de numbers1
+console.log(numbers1); // On obtient donc [1, 2, 3 ,4, 5, 6, 7, 8] 
+```
+
 ## Rest parameters
+
+La syntaxe du rest parameters permet de représenter un nombre infini d'arguments sous forme d'un tableau.
+
+On peut donc écrire : 
+
+```javascript 
+function addition(...arguments) {
+	return arguments.reduce((previous, current) => {
+		return previous + current;
+	});
+}
+
+console.log(addition(1, 2, 3, 4)); // 1 + 2 + 3 + 4 = 10
+```
 
 # Maîtrise de la fonction
 
 ## Fonction anonyme
 
-## Fonctions fléchées
+Une fonction anonyme est une fonction qui ne prend pas de nom. Cela est pratique dans certaines situations. On peut ainsi affecter une fonction à une variable ou en tant que paramètre d'une autre fonction. 
 
 ## Callback
 
+Une fonction de retour (callback en anglais) est une fonction passée en paramètre dans une autre fonction. Elle est donc appelée par cette autre fonction. 
+
+Exemple : 
+
+```javascript
+function sayHello(fonctionRetour) {
+	fonctionRetour();
+}
+
+function hello() {
+	alert('Hello');
+}
+sayHello(hello);
+```
+
 ## Closure
+
+Les closures en JS font référence à la portée des variables.
+
+Lorsqu'une variable est définie à l'intérieur d'une fonction, cette première ne sera pas accessible en dehors de cette même fonction.
+
+Cependant, lorsqu'une fonction retourne une autre fonction, les variables contenues dans celle-ci resteront accessibles. 
 
 # ESLint avec un StyleGuide
 
+ESLint est un outil qui analyse du code pour y corriger les potentielles erreurs ou pour en améliorer la lisibilité. 
+
+ESLint va donc comparer le code qu'on lui soumet à un ensemble de règles qui lui ont été données.
