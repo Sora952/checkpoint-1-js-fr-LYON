@@ -124,7 +124,7 @@ const [premier, deuxième, troisième] = unTableau;
 ```
 
 **Spread Operator** :
-Sert à éclater un tableau (ou tout autre itérable) en une liste finie de valeurs.
+Sert à éclater un tableau (ou tout autre itérable) en une liste finie de valeurs. Par exemple on récupère dans la variable `mots` la varible `fruits` qui sera éclatée afin que chaque éléments du tableau `fruits` soient ajoutés dans `mots` et non le tableau en lui même.
 ```javascript
 let fruits = ['pomme', 'poire', 'abricot']
 let legumes = ['salade', 'asperge']
@@ -229,7 +229,7 @@ const Modal = ({ onHandleClose, show, children }) => {
 **Affichage conditionnel avec JSX**
 
 Ici je reprend l'exemple du cours qui se suffit à lui même.
-On déclare une option style dans le button dans laquelle on passe une fontWeight avec un ternaire qui met la class bold si active se trouve en paramètre de l'élément ou la classe normal si elle ne s'y trouve pas (sur ToggleButton).
+On déclare une option `style` dans le `button` dans laquelle on passe une propriété `fontWeight` avec un ternaire qui met le paramètre à `bold` si `active` se trouve en paramètre de l'élément ou le paramètre `normal` si elle ne s'y trouve pas (sur `ToggleButton`).
 
 ```javascript
 const ToggleButton = ({ active }) => (
@@ -248,4 +248,24 @@ const App = () => (
     <ToggleButton />
   </div>
 );
+```
+
+Ici même principe sauf qu'on réfère une className qui va récupérer la propriété qui lui est associée dans le css au lieux de directement déclarer le style dans le `h2`. Si on passe `underline` à `title` alors il applique la `className` sinon il n'applique rien.
+
+```javascript
+const Title = ({ title, underline }) => (
+  <h2 className={underline ? "with-border" : ""}>{title}</h2>
+);
+
+const App = () => (
+  <div>
+    <Title title="Without border" />
+    <Title title="With border" underline />
+  </div>
+);
+
+// CSS
+.with-border {
+  border-bottom: 2px solid #0288d1;
+}
 ```
