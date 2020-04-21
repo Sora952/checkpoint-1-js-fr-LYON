@@ -46,4 +46,13 @@ $ Abdel@AKH~ git tag v0.4 <id_commit>
 
 ### 3 - ES6+ (fléchées, destructuring, spread operator, rest parameters...)
 
-### 4 - Utiliser un débogueur (chrome react tool)
+>- petit exemple de déstructuring
+````
+var myObject = {
+  age: 1,
+  taille: 275,
+};
+const { age } = myObject;
+//return 1
+````
+
