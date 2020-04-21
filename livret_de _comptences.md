@@ -153,3 +153,99 @@ logArgs('coucou', 3, 'Bob') // args == ['coucou', 3, 'Bob']
 ---
 
 ### React
+
+**props** :
+
+Composants que j'ai créé avec des props pour mon projet 2 :
+
+Le Bouton contenant le Link :
+```javascript
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Button.css';
+
+function Button (props) {
+  return (
+    <Link className='button-config' id={props.buttonId} to={props.link}>{props.linkName}</Link>
+  );
+}
+
+export default Button;
+```
+La NavBar qui contient le bouton avec les props récupérés :
+```javascript
+import React from 'react';
+import './Home.css';
+import Button from './Button';
+
+function NavBar () {
+  return (
+    <nav className='nav-home'>
+      <div id='options-rules-container'>
+        <li>
+          <Button link='/options' linkName='Options' />
+        </li>
+        <li>
+          <Button link='/rules' linkName='Rules' />
+        </li>
+      </div>
+      <div id='play-container'>
+        <li>
+          <Button link='/deckchoice' linkName='Play' buttonId='play-button' />
+        </li>
+      </div>
+    </nav>
+  );
+}
+
+export default NavBar;
+```
+
+**event :**
+
+Ma modale avec son évènement onClick :
+
+```javascript
+const Modal = ({ onHandleClose, show, children }) => {
+  const showHideClassName = show ? 'modal display-block' : 'modal display-none';
+
+  return (
+    <div className={showHideClassName}>
+      <section className='modal-main'>
+        <h2>Are you sure of the composition of your deck ?</h2>
+        <div className='modal-heroesChosen-container'>
+          {children}
+        </div>
+        <div className='button-modal-container'>
+          <button type='button' className='button-config' onClick={onHandleClose}>Close</button>
+          <Button id='button-battle' link='/' linkName='Start' />
+        </div>
+      </section>
+    </div>
+  );
+};
+```
+
+**Affichage conditionnel avec JSX**
+
+Ici je reprend l'exemple du cours qui se suffit à lui même.
+On déclare une option style dans le button dans laquelle on passe une fontWeight avec un ternaire qui passe la valeur bold si la classe active se trouve en paramètre de l'élément ou en normal si elle ne s'y trouve pas (sur ToggleButton).
+
+```javascript
+const ToggleButton = ({ active }) => (
+  <button
+    style={{
+      fontWeight: active ? "bold" : "normal"
+    }}
+  >
+    Button
+  </button>
+);
+
+const App = () => (
+  <div>
+    <ToggleButton active />
+    <ToggleButton />
+  </div>
+);
+```
