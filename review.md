@@ -36,7 +36,13 @@ With no options, ps outputs the long format by default
 
 ### 2 - Savoir utiliser les tags de Git
 
->- Le but des tags est de donner un nom "simple" à un commit pour le retrouver plus facilement et pouvoir aussi l'utiliser avec des outils comme composer, npm ou autre. Le mieux c'est de poser un tag de version quand tu atteind une étape que tu estime 'stable'
+>- Le but des tags est de donner un nom "simple" à un commit pour le retrouver plus facilement et pouvoir aussi l'utiliser avec des outils comme composer, npm ou autre. Le mieux c'est de poser un tag de version quand tu atteind une étape que tu estime 'stable'.
+
+>- Exemple
+
+````
+$ Abdel@AKH~ git tag v0.4 <id_commit>
+````
 
 ### 3 - ES6+ (fléchées, destructuring, spread operator, rest parameters...)
 
