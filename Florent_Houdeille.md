@@ -384,3 +384,62 @@ C'est un outil qui analyse statiquement du code et vérifie que celui-ci respect
 ## REACT
 
 ### 1. Utiliser JSX
+
+Le JSX est une syntaxe nous permettant de mélanger du javascript et du XML dans le même code.
+Il y a quelques différences à noter avec le HTML :
+
+- les noms des balises changent si elles ressemblent au nom des méthodes de javascript. _Exemple :_ class devient className.
+
+On peut créer des balises (composants) dans un fichier externe au fichier App.jsx et l'appeler depuis App.jsx en l'exportant depuis le fichier d'origine et en l'important dans App.jsx.
+
+Grâce au JSX, on peut insérer des balises HTML au sein du js.
+
+### 2. Savoir implanter un routing
+
+Le routing permet de simuler un changement de page sur l'appli internet. 
+
+```javascript
+class App extends React.Component {
+  render () {
+    return (
+      <div className='App'>
+        <Router>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/page1' component={page1} />
+            <Route path='/page2' component={page2} />
+          </Switch>
+        </Router>
+      </div>
+    );
+  }
+}
+```
+Le _exact_ sert à éviter que le chemin confonde avec un autre chemin.
+
+### 3. Communiquer entre les Composants (props, event emits ...)
+
+1) Les Props
+
+Les props servent à modifier dynamiquement, lors de l'appel du composant, les différentes clés du composant. Ainsi, en ayant créé une fois le composant, on peut l'appeler autant de fois que nécessaire en modifiant les valeurs des clés manuellement.
+
+2) event
+
+Les event permettent à l'utilisateur d'intéragir avec le site. 
+
+- On peut gérer un click avec ```onClick```.
+- On peut utiliser l’attribut ```onChange``` afin de lier un évènement à une fonction du composant qui a la charge de mettre à jour l’état par la méthode setState.
+- On peut utiliser l'attribut ```onSubmit``` afin de soumettre ce qui a été mis dans un input.
+- On peut utiliser l'attribut ```onMouseEnter``` afin de lier un évènement de souris passant sur un lien (sans cliquer) à une fonction du composant qui a la charge de mettre à jour l’état par la méthode setState.
+- On peut utiliser l'attribut ```onMouseLeave``` afin de lier un évènement de souris sortant d'un lien (sans cliquer) à une fonction du composant qui a la charge de mettre à jour l’état par la méthode setState.
+
+### 4. Utiliser l'affichage conditionnel en JSX
+
+On peut faire un affichage conditionnel via un opérateur ternaire :
+valeur à vérifier ? Validation : Annulation.
+
+On peut aussi utiliser les if, if...else, if...else if, etc...
+
+### 5. Afficher une liste de composants avec map
+
+map permet de filtrer un tableau ou un objet et d'en lister les composants si on les sort dans une liste à puce via ```<li>```
