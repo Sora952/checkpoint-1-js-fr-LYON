@@ -33,18 +33,18 @@ La commande chown correspond à l'abréviation de **ch**ange the **own**er et pe
 
 La commande chown prend la syntaxe suivante :
 
-```shell  chown nouveau_propriétaire nom_du_fichier```
+```chown nouveau_propriétaire nom_du_fichier```
 
 Elle peut prendre plusieurs options dont les suivantes : 
 
-* ```shell -R``` : opère le changement sur tous les fichiers et sous-dossiers du dossier choisi de manière récursive
-* ```shell -v``` : décrit les changements de propriétaire
-* ```shell --version``` : donne le numéro de la version de chown
-* ```shell -c, --changes``` : ne décrit que les fichiers dont le propriétaire est modifié
+* ```-R``` : opère le changement sur tous les fichiers et sous-dossiers du dossier choisi de manière récursive
+* ```-v``` : décrit les changements de propriétaire
+* ```--version``` : donne le numéro de la version de chown
+* ```-c, --changes``` : ne décrit que les fichiers dont le propriétaire est modifié
 
 ### Exemple
 
-```shell chown geoffroy /home/dossier-important``` : fait de l'utilisateur "geoffroy" le nouveau propriétaire du dossier "dossier-important".
+```chown geoffroy /home/dossier-important``` : fait de l'utilisateur "geoffroy" le nouveau propriétaire du dossier "dossier-important".
 
 ## Chmod
 
@@ -69,10 +69,10 @@ $ chmod options modes fichiers
 
 La commande chmod possède plusieurs options. Les plus courantes sont les suivantes : 
 
-* ```shell -v, --recursive``` : afficher la liste de tous les fichiers en cours de modification
-* ```shell --help``` : affiche l'aide de la commande chmod
-* ```shell --version``` : affiche les informations sur la version de chmod
-* ```shell -R, --recursive```: change les modes de tous les fichiers dans les sous-répertoires de manière récursive
+* ```-v, --recursive``` : afficher la liste de tous les fichiers en cours de modification
+* ```--help``` : affiche l'aide de la commande chmod
+* ```--version``` : affiche les informations sur la version de chmod
+* ```-R, --recursive```: change les modes de tous les fichiers dans les sous-répertoires de manière récursive
 
 ### Modes
 
@@ -102,34 +102,46 @@ Elles se donnent de la manière suivantes :
 
 #### Exemple
 
-* ```shell chmod -R a+rw dossier``` : donne à tous les utilisateurs des autorisations de lecture et d'écriture au dossier choisi ainsi qu'à tous les fichiers et dossiers qu'il contient.
-* ```shell chmod 755 fichier``` : donne au propriétaire du fichier tous les droits (4 + 2 + 1 = 7), aux membres du groupe et aux autres utilisateurs les droits de lecture et d'accès au fichier (4 + 1 = 5).
+* ```chmod -R a+rw dossier``` : donne à tous les utilisateurs des autorisations de lecture et d'écriture au dossier choisi ainsi qu'à tous les fichiers et dossiers qu'il contient.
+* ```chmod 755 fichier``` : donne au propriétaire du fichier tous les droits (4 + 2 + 1 = 7), aux membres du groupe et aux autres utilisateurs les droits de lecture et d'accès au fichier (4 + 1 = 5).
 
 # Gérer les paquets et mettre à jour le système
 
 ## Mettre à jour la liste des paquets
 
-```shell $ sudo apt update```
+```shell
+ $ sudo apt update
+ ```
 
 ## Afficher les paquets pour lesquels une mise à jour est disponible
 
-```shell $ sudo list --upgradable ```
+```shell
+ $ sudo list --upgradable 
+ ```
 
 ## Mettre à jour les paquets sans ajouter ou supprimer des paquets
 
-```shell $ sudo apt upgrade```
+```shell
+ $ sudo apt upgrade
+ ```
 
 ## Mettre à jour des paquets en supprimant des paquets si nécessaire pour en installer de nouvelles versions
 
-```shell $ sudo apt full-upgrade```
+```shell
+ $ sudo apt full-upgrade
+ ```
 
 ## Supprimer les paquets devenus obsolètes
 
-```shell $ sudo apt autoremove```
+```shell
+ $ sudo apt autoremove
+ ```
 
 ## Supprimer le cache des paquets qui ne peuvent plus être réléchargés
 
-```shell sudo apt autoclean ```
+```shell 
+sudo apt autoclean 
+```
 
 # Gérer les processus et le multi-tâche
 
@@ -139,7 +151,7 @@ En effet, étant donné qu'un seul processeur ne peut éxecuter qu'une instructi
 
 Un système devra donc définir les programmes à exécuter en priorité pour répondre correctement aux attentes de son utilisateur.
 
-## La commande ```shell ps```
+## La commande ```ps```
 
 Cette commande permet d'obtenir des informations sur les processus actifs sur le système. 
 
@@ -151,11 +163,11 @@ Une fois l'affichage long activé grâce aux options, la commande ps donnera ent
 * Propriétaire
 * Priorité
 
-## La commande ```shell top```
+## La commande ```top```
 
 La commande top permet de lancer un gestionnaire de tâches qui liste en temps réel les processus et les ressources qui leurs sont consacrées.
 
-## La commande ```shell kill```
+## La commande ```kill```
 
 ### Définition
 
@@ -163,7 +175,7 @@ Avant de s'intéresser à la commande Kill, il faut comprendre ce qu'est un sign
 
 Un signal n'est autre qu'un message envoyé à un processus. Chaque signal correspond à un évènement particulier. Il peut s'agir par exemple de demander l'interruption d'un processus 
 
-La commande ```shell kill``` a deux fonctions principales : 
+La commande ```kill``` a deux fonctions principales : 
 
 * Obtenir la liste des signaux disponibles sur le système
 * Envoyer un signal à un ou plusieurs processus
@@ -174,13 +186,17 @@ Par défaut, la commande kill envoi un signal demandant l'interruption d'un proc
 
 La syntaxe la plus simple de la commande Kill est la suivante : 
 
-```shell kill PID_du_processus```
+```shell
+ kill PID_du_processus
+ ```
 
 Chaque processus répond en effet à un identifiant PID qui lui correspond.
 
 ### Exemple
 
-```shell kill 1234```
+```shell
+ kill 1234
+ ```
 
 Cet exemple va mettre fin à l'exécution du processus répondant au PID "1234".
 
@@ -190,7 +206,9 @@ Il est possible avec git d'attribuer un tag à un commit pour l'identifier plus 
 
 Pour lister les tags existant, on utilise la commande suivante : 
 
-```shell $ git tag```
+```shell
+ $ git tag
+ ```
 
 Les tags affichés sont listés par ordre alphabétique. 
 
@@ -205,7 +223,9 @@ Les tags légers ressemblent à une branche, à la différence de cette dernièr
 
 Pour créer un tag léger, on utilise la commande suivante : 
 
-```shell $ git tag numéro_version```
+```shell
+ $ git tag numéro_version
+ ```
 
 ## Tags annotés 
 
@@ -213,11 +233,13 @@ Les tags annotés sont stockés en tant qu'objet et peuvent donc contenir divers
 
 Pour créer une étiquette annotées, on utilise la commande suivante :
 
-```shell $ git tag -a numéro_version -m "message"```
+```shell
+ $ git tag -a numéro_version -m "message"
+ ```
 
 L'option -a sert à attribuer un numéro de version au tag. L'option -m permet quant à elle de préciser un message entre guillemet.
 
-Pour afficher les données d'un commit tagué, on utilise la commande ```shell $ git show numéro_version```
+Pour afficher les données d'un commit tagué, on utilise la commande ```$ git show numéro_version```
 
 # Faire des commits atomiques correctement commentés
 
@@ -287,8 +309,13 @@ Les fonctions fléchées ont été introduite dans ES6+ et permettent de réduir
 
 Ainsi, les deux fonctions suivantes sont équivalentes : 
 
-```javascript const ES5 = function(x, y) { return x + y; }```
-```javascript const ES6 = (x) => { x + y }```
+```javascript 
+const ES5 = function(x, y) { return x + y; }
+```
+
+```javascript
+ const ES6 = (x) => { x + y }
+```
 
 ## Destructuring
 
@@ -296,7 +323,9 @@ Le destructuring consiste à assigner des variables provenant d'un objet ou d'un
 
 Prenons l'objet suivante : 
 
-```javascript const myObject = { num1: 1, num1: 2 }```
+```javascript
+ const myObject = { num1: 1, num1: 2 }
+ ```
 
 Si en ES5, il fallait assigner les valeurs num1 et num2 à des variables pour les retourner, cela n'est plus nécessaire avec le destructuring.
 
