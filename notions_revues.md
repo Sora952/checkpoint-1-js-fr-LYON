@@ -111,11 +111,11 @@ Puis mis en pratique sur les 4 user stories suivantes, le workflow est clair.
 
 Ce sont des outils (ou programme) qui permettent de gérer dynamiquement les fichiers CSS. Ils interviennent avant le traitement des fichiers CSS par le navigateur web. L'objectif est d'ajouter des fonctionnalités (par exemple des variables) pour permettre au développeur de mieux structurer son code.
 Les plus connus : Sass, LESS, Stylus.
-Au moment où ils ont été créé, on ne pouvait pas faire autant de chose qu'aujourd'hui en CSS pur (variables, mixins).
-Mais même si on peut faire plus de choses en CSS maintenant, il y a toujours des différences : 
-- syntaxe des variables
-- support des navigateurs
-Amènent aussi des choses qui n'existent pas en css:
+Au moment où ils ont été créé, on ne pouvait pas faire autant de chose qu'aujourd'hui en CSS pur (variables par exemple).
+Mais même si on peut faire plus de choses en CSS maintenant, il y a toujours des différences avec le pre-processeur : 
+- pas la mme syntaxe des variables
+- meilleur support des navigateurs
+Ils amènent aussi des choses qui n'existent pas en css:
 - conditions
 - boucles
 - classes utilitaires
@@ -129,6 +129,17 @@ Sass (le plus commun) :
 
 ### Respecter les bonnes pratiques SEO
 
+(= Search Engine Optimization)
+
+Ce sont les bonnes pratiques de référencement naturel (par opposition au référencement sponsorisé).
+Pratiques de bases : 
+- Vérfier que l'indexation des pages n'est pas bloquée
+- Balises META <title> courte
+- Balise META <description> plus longue qui donne envie de cliquer
+- Url compréhensibles par un humain et pas trop long
+- Contenu riche (en nombre de mot et en vocabulaire utlisé)
+- Utiliser des images, avec des alt et title, pas trop lourde pour charger vite
+- HTML structuré
 
 ## React
 
