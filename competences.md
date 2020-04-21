@@ -277,7 +277,7 @@ Entre deux mission, on dit du consultant qu'il est en "intercontrat", période d
 
 ## Agence Web
 
-Contrairement aux ESN, les agences web gèrent en interne une partie ou l'intégralité d'un projet web. 
+Contrairement aux ESN, les agences web gèrent en interne une partie ou l'intégralité d'un projet web. Elle est donc composé de nombreux profils (rédacteurs, community managers, graphistes, développeurs, responsable SEO etc...) qu'elle mettra au service des projets qu'elle doit réaliser pour ses clients. 
 
 ## Freelance
 
