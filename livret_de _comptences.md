@@ -229,7 +229,7 @@ const Modal = ({ onHandleClose, show, children }) => {
 **Affichage conditionnel avec JSX**
 
 Ici je reprend l'exemple du cours qui se suffit à lui même.
-On déclare une option style dans le button dans laquelle on passe une fontWeight avec un ternaire qui passe la valeur bold si la classe active se trouve en paramètre de l'élément ou en normal si elle ne s'y trouve pas (sur ToggleButton).
+On déclare une option style dans le button dans laquelle on passe une fontWeight avec un ternaire qui passe la class bold si active se trouve en paramètre de l'élément ou la classe normal si elle ne s'y trouve pas (sur ToggleButton).
 
 ```javascript
 const ToggleButton = ({ active }) => (
