@@ -271,7 +271,13 @@ Le SCSS permet d'écrire plus rapidement du CSS et se rapproche davantage d'un l
 
 ## ESN
 
+Anciennement appelées SSII pour Société de Services en Ingénierie Informatique, les ESN (Entreprises de Services du Numériques) recrutent des consultants informatiques qu'elles envoient en mission directement chez leurs clients. Elle facture ensuite le travail de ses intervenant à la journée. 
+
+Entre deux mission, on dit du consultant qu'il est en "intercontrat", période dont il profite généralement pour suivre des formations en attendant d'être envoyé sur une nouvelle mission.
+
 ## Agence Web
+
+Contrairement aux ESN, les agences web gèrent en interne une partie ou l'intégralité d'un projet web. 
 
 ## Freelance
 
