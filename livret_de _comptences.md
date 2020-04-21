@@ -250,7 +250,7 @@ const App = () => (
 );
 ```
 
-Ici même principe sauf qu'on réfère une className qui va récupérer la propriété qui lui est associée dans le css au lieux de directement déclarer le style dans le `h2`. Si on passe `underline` à `title` alors il applique la `className` sinon il n'applique rien.
+Ici même principe sauf qu'on réfère une `className` qui va récupérer la propriété qui lui est associée dans le css au lieux de directement déclarer le style dans le `h2`. Si on passe `underline` à `title` alors il applique la `className` sinon il n'applique rien.
 
 ```javascript
 const Title = ({ title, underline }) => (
