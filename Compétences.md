@@ -1,8 +1,8 @@
 # Compétences - En cours d’acquisition
 
-<h1 style="color: #00874b" >UNIX</h1>
+# UNIX
 
-<h2 style="color: #005C89" >1. Savoir gérer les droits (sudo, chown, chmod)</h2>
+## 1. Savoir gérer les droits (sudo, chown, chmod)
 
 **-Sudo :** (abréviation de substitute user do) est une commande informatique utilisée principalement dans les systèmes d'exploitation de type Unix.
 
@@ -18,7 +18,7 @@ Exemple pour modifier le propriétaire de tout le contenu d'un dossier : `chown 
 
 Exemples pour donner au propriétaire les droits en écriture et en lecture au fichier mon_fichier : `chmod u+rw mon_fichier`
 
-<h2 style="color: #005C89" >2. Savoir gérer les paquets et mettre à jour le système</h2>
+## 2. Savoir gérer les paquets et mettre à jour le système
 
 -Pour maintenir à jour son système depuis un terminal, on peut utiliser la commande: `sudo apt update && sudo apt full-upgrade -y`
 
@@ -34,7 +34,7 @@ Exemples pour donner au propriétaire les droits en écriture et en lecture au f
 
 -Désinstaller un paquet : `sudo apt-get remove PAQUET`
 
-<h2 style="color: #005C89" >3. Gérer les processus et le multi-tâche (ps, top, kill ...)</h2>
+## 3. Gérer les processus et le multi-tâche (ps, top, kill ...)
 
 
 **-Ps :** dans la majorité des systèmes Unix, la commande ps affiche les processus machines en cours d'exécution. 
@@ -79,9 +79,9 @@ Swap:  2097148k total,   428148k used,  1669000k free,   598568k cached
 
 **-Kill :** en informatique, kill est une commande de certains systèmes d'exploitation utilisée pour demander l'arrêt d'un processus en cours d'exécution : `~$ kill [PID]`
 
-<h1 style="color: #00874b" >Intégration</h1>
+# Intégration
 
-<h2 style="color: #005C89" >1. Connaître les différents métiers du developpement web (ESN, agence web, freelance...)</h2>
+## 1. Connaître les différents métiers du developpement web (ESN, agence web, freelance...)
 
 **-ESN :** (abréviation de entreprise de services du numérique, anciennement société de services en ingénierie informatique (anciennement SSII ou SS2I), est une société de services experte dans le domaine des nouvelles technologies et de l’informatique et a pour objectif principal d’accompagner une société cliente dans la réalisation d’un projet.
 
@@ -89,10 +89,9 @@ Swap:  2097148k total,   428148k used,  1669000k free,   598568k cached
 
 **-Freelance :** c'st un travailleur indépendant est à la fois entrepreneur, propriétaire et son propre employé (sans être pour autant salarié). Il est maître de ses décisions concernant son travail mais doit toutefois s'adapter aux demandes de sa clientèle.
 
-<h1 style="color: #00874b" >Javascript</h1>
+# Javascript
 
-
-<h2 style="color: #005C89" >1. ES6+ (fléchées, destructuring, spread operator, rest parameters...)</h2>
+## 1. ES6+ (fléchées, destructuring, spread operator, rest parameters...)
 
 **-Fonctions fléchée :** permet d’avoir une syntaxe plus courte que les expressions de fonction et sont souvent anonymes.
 
@@ -150,7 +149,7 @@ console.log(sum(1, 2, 3)); // 6
 console.log(sum(1, 2, 3, 4)); // 10
 ```
 
-<h2 style="color: #005C89" >2. Maitrise de la fonction (fonction anonyme, fonctions fléchée, callback et closure)</h2>
+## 2. Maitrise de la fonction (fonction anonyme, fonctions fléchée, callback et closure)
 
 **-Fonction anonyme :** lorsqu'une fonction est définie sans nom, il s'agit d'une fonction anonyme.
 ```
@@ -198,7 +197,7 @@ function compteur() {
 let plusUn = compteur();
 ```
 
-<h2 style="color: #005C89" >3. Orienté Objet en ES6(Classe, Inheritance, Interface, Staticité)</h2>
+## 3. Orienté Objet en ES6(Classe, Inheritance, Interface, Staticité)
 
 **-Classe :** les classes JavaScript fournit une syntaxe plus simple pour créer des objets et manipuler l'héritage.
 
@@ -275,9 +274,9 @@ class ClassWithStaticMethod {
 console.log(ClassWithStaticMethod.staticMethod()); // "static method has been called."
 ```
 
-<h1 style="color: #00874b" >React</h1>
+# React
 
-<h2 style="color: #005C89" >1. Consommer une API</h2>
+## 1. Consommer une API
 
 ```
   componentDidMount() {
@@ -300,11 +299,11 @@ console.log(ClassWithStaticMethod.staticMethod()); // "static method has been ca
   }
 ```
 
-<h2 style="color: #005C89" >2. Utiliser un débogueur (chrome react tool)</h2>
+## 2. Utiliser un débogueur (chrome react tool)
 
 React Developer Tools c'est une extension de Chrome Developer Tools qui vous permet d'obtenir un nouvel onglet intitulé «React» dans vos Chrome DevTools. Cet onglet vous présente une liste des composants React racine rendus sur la page ainsi que les sous-composants rendus par chaque racine.
 
-<h2 style="color: #005C89" >3. Savoir implémenter un routing</h2>
+## 3. Savoir implémenter un routing
 
 ```
   <Router>
