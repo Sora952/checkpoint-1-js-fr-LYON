@@ -1,10 +1,10 @@
-HELPPPPP
+
 
 # UNIX
-====
 
-Savoir gérer les droits (sudo, chown, chmod) : 
-===============================================
+
+## Savoir gérer les droits (sudo, chown, chmod) : 
+
 
     - **Sudo**  : Cette commande permet d'effectuer des tâches "administratives". Elle permet d'utiliser et d'executer les droits de super utilisateur. 
   
@@ -20,8 +20,8 @@ Savoir gérer les droits (sudo, chown, chmod) :
      Le second x est la valeur des droits du groupe propriétaire.
     Et le dernier est la valeur des droits des autres utilisateurs.
     
-Gérer les processus et le multi-tâche (ps, top, kill ...)	 : 
-==============================================================
+## Gérer les processus et le multi-tâche (ps, top, kill ...)	 : 
+
 
 La commande **ps** permet d'afficher la liste des processus associés au terminal.
 
@@ -29,37 +29,49 @@ La commande **top** (ou htop) permet d'afficher les processus qui consomment le 
 
 La commande **kill** permet d'arrêter un processus avec son numéro PID obtenu via la commande **ps**.
 
-## **Git**
-=========
+# **Git**
 
-Faire relire mon code à mon équipe avec une pull request (PR) : 
-=============================================================
+
+## Faire relire mon code à mon équipe avec une pull request (PR) : 
+
 Une pull request a pour but de demander au propriétaire d'un dépôt, ou aux différents développeur d'un projet de prendre en compte les modifications qu'on a effectué sur une branche. Suite à une pull request, le propriétaire peut acceder aux modifications pour faire une vérification, S'il estime que les modifications ne sont pas correctes, il peut refuser la PR en explicitant les raisons. Ou à contrario l'accepter pour merge les modifications. 
 
-Faire des merges réguliers et gérer les conflits :
-===================================================
-Git mmerge permet de fusionner notre branche à la branche master. 
-Lors des merges, des conflits peuvent apparaître. un git status permet d'observer les fichiers qui n'ont pas été fusionnés. Il faut donc choisir manuellement les données à garder. 
+## Faire des merges réguliers et gérer les conflits :
 
-Faire des commits atomiques correctement commentés et des PR de 
+Git merge permet de fusionner notre branche à la branche master. 
+Lors des merges, des conflits peuvent apparaître (). un git status permet d'observer les fichiers qui n'ont pas été fusionnés. Il faut donc choisir manuellement les données à garder en choisisant si on garde le code actuel, ou celui qu'on importe. 
+
+## Savoir utiliser les tags de Git : 
+
+Les tags Git permet d'étiqueter un état considérer important dans l'historique . Par exemple il permet de mettre des versions `v1 v2 v2.5` pour signifier l'avancement d'une application. 
+`Git tag` permet de voir les différentes versions. 
+Il existe deux types de tags. Les tags légère (Lightweight ) qui est un pointeur sur un commit spécifique. Et les tags avec une annotation `-a`. Exempel `git tag -a V1.1` .
+ Il peut être suivie d'un message avec `-m`.
+ Exemple `git tag -a v1.1 -m 'La version v1.1',le bouton play est opérationel'`.
+ 
+
+## Faire des commits atomiques correctement commentés et des PR de 
 taille humaine : 
-====================================================================
-Effectuer des commits atomiques revients à décomposer les modifications. Et donc d'utiliser plusieurs commits afin de mieux suivre, et comprendre les modifications apportées. Ou encore de retrouver plus facielment une modification et de la "reverse" sans impacter les autres modifications. 
 
-### Intégration : 
-================
+Effectuer des commits atomiques revients à décomposer les modifications. Et donc d'utiliser plusieurs commits afin de mieux suivre, et comprendre les modifications apportées. Il est conseillé de commit des qu'on écrit du code fonctionnel sans erreur et fonctionnel. Ou encore de retrouver plus facilement une modification et de la "reverse" sans impacter les autres modifications. Il est important de commenter et d'être explicite sur le -m "" des commits pour
+se retrouver facilement.
+# Intégration : 
 
-Structurer une page en HTML5 :
-================================= 
-En premier lieu, il convient de de faire une déclaration du type du document (doctype). Cela permet d'informer le navigateur du type utilisé.
-<!Doctype html>
+
+## Structurer une page en HTML5 :
+
+En premier lieu, il convient de de faire une déclaration du type du document (doctype). Cela permet d'informer le navigateur du type utilisé. 
+
+`<!Doctype html>`
 
 Ensuite, on a l'élément <html> avec a langue, pour informer le navigateur que c'est un document HTML : 
+```html
 <html lang="FR">
 
 </html>
-
+```
 Il s'ensuit la section <head> qui contient les métadonnées (titre du document, caractères, styles, liens, scripts), l'information spécifique sur la page Web qui n'est pas affiché à l'utilisateur.
+```html
 
 <head>
   <meta charset="utf-8">
@@ -67,15 +79,45 @@ Il s'ensuit la section <head> qui contient les métadonnées (titre du document,
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
 </head>
-
+```
 Puis on a la section <body> qui regroupe le contenu avec les titres, le header, la nav si elle existe et le footer.
+```html
+  <body>
+    ...
+    <!-- Le reste du contenu -->
+    ...
+  </body>
+  </html>
+```
 
+On obtient donc la structure suivante  :  
+```html
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
 <body>
   ...
   <!-- Le reste du contenu -->
   ...
 </body>
 </html>
+```
+
+Dans le body on peut retrouver les balises suivants  : 
+```html
+<main> 
+  <section>
+    <div>
+    </div>
+  </section>
+</main>
+```
+
 
 Styliser efficacement avec CSS	:
 ==================================
@@ -87,7 +129,8 @@ Il faut établir une convention de Nommage et s'y tenir. Par exemple utiliser la
 
 Il est recommandé d'utiliser un css orienté objet, d'autant plus qu'on fait du js. La méthodologie consiste à regrouper les propriétés d'une classe. Et rajouter des classes supplémentaires qui correspondes à leurs spécificités  : 
 
-    `
+    ````html
+
     .bouton{
     display: block;
     font-size: 12px;
@@ -103,15 +146,18 @@ Il est recommandé d'utiliser un css orienté objet, d'autant plus qu'on fait du
     border-color: green;
     color: green;
     } 
+    ```
 
-####Javascript : 
-=================
+    
+
+#### Javascript : 
+
 
 ES6+ (fléchées, destructuring, spread operator, rest parameters...) :
 =======================================================================
 ES6+ a été pensé pour créer des applications web facilement maintenables. 
  Fléchées : 
-Les fonctions fléchées permettent d'écrire des fonctions plus courtes, et elles sont souvents annonymes : 
+**Les fonctions fléchées** permettent d'écrire des fonctions plus courtes( si elles disposent d'un seul return), et elles sont souvents annonymes : 
 Exemple  : 
     
 ```
@@ -120,7 +166,7 @@ Exemple  :
     }
 
 ```
-Le même code avec une fonction fléchée : 
+Le même code raccourci : 
 
 ```
 hello = () => {
@@ -158,9 +204,9 @@ console.log(prenom);  // Pierre
 ```
 On a plus besoin de créer la variable "nom"et "prenom" pour acceder à ces propriétés.
 
-**Spread operator**
- :
-Le spread oerator permet de développer un objet itérable, un tableau par exemple, lorsqu'on a besoin de plusieurs arguments.
+**Spread operator :**
+ 
+Le spread operator permet de développer un objet itérable, un tableau par exemple, lorsqu'on a besoin de plusieurs arguments.
 ```
 const myArray = [1991, 8, 1]
 new Date(...myArray) // object Date - équivaut à: new Date(1991, 8, 1)
@@ -176,7 +222,7 @@ function(){
     alert('rouge');
 }
 ```
-  * Une fonction fléchée est une façon plus courte d'écrire une fonction anonyme : 
+  * Une fonction fléchée est une façon plus courte (cf: précédèment), et permet d'écrire une fonction anonyme : 
 ```
 const alphabets = [
   'a',
@@ -187,7 +233,7 @@ const alphabets = [
 console.log(alphabets.map(alphabet => alphabet.length));
 
 ```
-  * Callback : 
+  * **Callback** : 
   Les callbacks permetent d'executer une fonction b une fois que la fonction A est terminée. La fonction b est passé dans la fonction A en tant qu'argument. 
 
 ```
@@ -203,29 +249,92 @@ function processUserInput(callback) {
 processUserInput(salutation);
 
 ```
-* Closure  : 
-  Une fermeture (closure ) est la paire formée d'une fonction et des références à son environnant (la portée). 
+* **Closure**  : 
+  Une fermeture (closure ) est la paire de {} formée d'une fonction et des références à son environnant (la portée). 
 
-* Maîtrise des événements utilisateurs VanillaJS :
+**Maîtrise des événements utilisateurs VanillaJS :**
 
-Maîtrise du DOM :
+La méthode `.addEventListener` sert à déclencher une fonction lorsqu'un utilisateur l'active : 
 
+```html
+<html>
+<body>
 
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+
+<button id="myBtn">Try it</button>
+
+<p><strong>Note:</strong> The addEventListener() method is not supported in Internet Explorer 8 and earlier versions.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("myBtn").addEventListener("click", function(){
+  document.getElementById("demo").innerHTML = "Coucou world";
+});
+</script>
+
+</body>
+</html>
+```
+**Maîtrise du DOM :**
+
+Le DOM (Document Object Model) permet de changer le contenu d'un élément HTML.
 
 Orienté Objet en ES6(Classe, Inheritance, Interface, Staticité)
 
-##### React : 
+ **React :** 
 
 
-** Utiliser JSX : **
+ **Utiliser JSX :** 
+Jsx est un langage de balisage pour l'écriture de composants. 
 
+Il permet :
+● d’insérer un composant enfant dans
+un composant parent,
+● de passer des props,
+● d’insérer des expressions JavaScript
+dans le balisage.
 
-* Savoir implémenter un routing :
+On peut insérer une expression JS grâce à des {}. 
+On peut appeler un composant avec <nomComposant/>. 
+
+Et le render () permet d'afficher notre contenu. En utilisant l'opérateur ternaire, nous pouvons avoir un Rendu conditionnel. 
+```JS
+import React from "react";
+import ReactDOM from "react-dom";
+
+import "./styles.css";
+
+const ToggleButton = ({ active }) => (
+  <button
+    style={{
+      fontWeight: active ? "bold" : "normal"
+    }}
+  >
+    Button
+  </button>
+);
+
+const App = () => (
+  <div>
+    <ToggleButton active />
+    <ToggleButton />
+  </div>
+);
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+
+```
+
+* **Savoir implémenter un routing :** (Mis en place dans le P2)
   1. Faire appel et installer  react-router-dom
 `   npm install --save react-router-dom
 `
   2. Dans app.js mettre en place le routing pour pouvoir naviguer sur les pages home et About: 
-```
+   
+```JS
 import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
@@ -258,5 +367,15 @@ class App extends Component {
 
 ```
 
-* Afficher une liste de composants avec map: 
+* **Afficher une liste de composants avec map :**
 
+Pour afficher une liste de composants avec .map, on peut s'y prendr de la manière suivante : 
+
+```JS
+const numbers = [1, 2, 3, 4, 5];
+const listItems = numbers.map((number) =>
+  <li>{number}</li>
+);
+```
+
+On  obtien donc une liste de puces de nombres entre 1 à 5.
