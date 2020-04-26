@@ -16,8 +16,18 @@ Au final la liste devra ressembler à :
 
 */
 
+
 function theaterSieges() {
   // Your code here !
+  let colonnes = 26;
+  let sieges = 100;
+
+for (let i = 0; i < 9; i++) {
+  sieges = colonnes + i;
+}
+
 }
 
 console.log(theaterSieges());
+
+
