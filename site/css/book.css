@@ -4,6 +4,16 @@ body {
     background-image: url('../image/background.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    flex-direction: row;
+    
+}
+
+.empty-whisky  {
+    display: none;
+}
+
+.whisky {
+    display: block;
 }
 
 main {
@@ -40,3 +50,63 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+@media screen and (max-width: 1200px) {
+    .desktop{
+        display: flex;
+        flex-direction: row;
+    }
+    
+
+    
+    .whisky,.empty-whisky {
+        margin-bottom: auto;
+    }
+
+    .inkpen {
+        margin-top: auto;
+}
+}
+
+@media screen and (max-width: 1100px) {
+
+    .inkpen{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px){
+
+    .inkpen{
+        display: none;
+    }
+
+    .whisky,.empty-whisky {
+        display: none;
+    }
+
+    .pages{
+        display: contents;
+    }
+
+}
+
+@media screen and (min-width: 322px) and (max-width: 800px){
+
+    .desktop {
+        flex-direction: column;
+        display: contents;
+    }
+    .whisky,.empty-whisky {
+        display: none;
+    }
+
+    .pages {
+        flex-direction: column;
+    }
+
+    .page {
+        width: auto;
+    }
+    }

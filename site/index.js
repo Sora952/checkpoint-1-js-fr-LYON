@@ -1,3 +1,5 @@
-window.addEventListener('load', () => {
-  // TODO : Displaying the empty whisky glass when you click on the glass.
-});
+let toto = function () {
+  document.getElementById("whisky").style.display = "none";
+  document.getElementById("empty-whisky ").style.display = "block";
+}
+
