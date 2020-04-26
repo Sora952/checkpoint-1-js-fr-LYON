@@ -1,6 +1,6 @@
 # Gérer les droits 
 
-==sudo
+#sudo
 
 **Définition**
 
@@ -19,11 +19,11 @@
 >$ sudo -k
 
 
-**Chown**
+#Chown
 
 **Définition**
 
--Chown = change the owner,il change le propriétaire d'un fichier ou d'un dossier.
+- Chown = change the owner,il change le propriétaire d'un fichier ou d'un dossier.
 
 **Utilisation**
 
@@ -31,17 +31,17 @@
 
 les options disponibles
 
--R : opère le changement sur tous les fichiers et sousdossiers du dossier choisi de manière récursive
--v : décrit les changements de propriétaire
---version : donne le numéro de la version de chown
--c, --changes : ne décrit que les fichiers dont le propriétaire est modifié
+- -R : opère le changement sur tous les fichiers et sousdossiers du dossier choisi de manière récursive
+- -v : décrit les changements de propriétaire
+- -version : donne le numéro de la version de chown
+- c, --changes : ne décrit que les fichiers dont le propriétaire est modifié
 
 **Exemple**
 
 chown Lancelot /home/dossier-important : fait de l'utilisateur "Lancelot" le nouveau propriétaire du dossier "dossier-important".
 
 
-**Chmod**
+#Chmod
 
 **Définition**
 
@@ -49,9 +49,9 @@ Chmod= Change mode,il change les permissions d'accès d'un fichier ou d'un reper
 
 **Utilisation**
 
--prerequis
-1)Passer en mode superutilisateur
-2)Être le propriétaire du fichier en question
+ prerequis
+- Passer en mode superutilisateur
+- Être le propriétaire du fichier en question
 
 < $ chmod options modes fichiers
 
@@ -72,6 +72,8 @@ Les modes définisent les utilisateurs qui vont bénéficier des permissions
 **Définition**
 
 **Utilisation**
+
+les cignes sont sur la mer du Nord 
 
 
 
