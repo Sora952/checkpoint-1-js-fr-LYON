@@ -351,13 +351,13 @@ processUserInput(salutation);
 Une fermeture est la paire formée d'une fonction et des références à son état environnant (l'environnement lexical). En d'autres termes, une fermeture donne accès à la portée d'une fonction externe à partir d'une fonction interne (on dit aussi que la fonction « capture son environnement »). En JavaScript, une fermeture est créée chaque fois qu'une fonction est créée.
 
 
-> function ajouteur(nombre) {
-    function ajoute(valeur) {
-        return valeur + nombre;
-    }
+	function ajouteur(nombre) {
+    	function ajoute(valeur) {
+        	return valeur + nombre;
+    	}
 
-    return ajoute;
-}
+   	 return ajoute;
+	}
 
 var ajoute10 = ajouteur(10);
 ajoute10(1); // renvoie 11
@@ -367,7 +367,7 @@ ajoute10(1); // renvoie 11
 let ajouteur =  nombre => valeur => valeur + nombre
 
 let ajoute10 = ajouteur(10);
-ajoute10(1); // renvoie 11
+ajoute10(1); // renvoie 11 
 
 
 **ESLint avec un StyleGuide**
