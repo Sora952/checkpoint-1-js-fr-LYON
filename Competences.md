@@ -1,6 +1,6 @@
-# Gérer les droits 
+#Gérer les droits#
 
-#sudo
+#sudo#
 
 **Définition**
 
@@ -10,7 +10,7 @@
 
 -Pour lancer une commande en mode superutilisateur,il faut écrire
 
->$ sudo <commande>
+```$ sudo <commande>```
 
 - UN MDP est requis pour pouvoir exécuter la commande,disponible seulement pour 15 minutes il faut redonner le MDP aprés ces 15 minutes.
 
@@ -263,18 +263,18 @@ il assigne des variables venant d'un objet ou d'un tableau.
 
 les deux manières possibles 
 
->// ES5
+```// ES5
 var num1 = myObject.num1;
 var num2 = myObject.num2;
 
 num1; // 1
-num2; // 2
+num2; // 2```
 
->// ES6
+```// ES6
 const { num1, num2 } = myObject;
 
 num1; // 1
-num2; // 2
+num2; // 2```
 
 
 **Spread operator**
@@ -282,12 +282,12 @@ num2; // 2
 
 il développe un objet itérable(comme un array),lorqu'on à besoin de plusieurs arguments.
 
-> const myArray = [1991, 8, 1]
+``` const myArray = [1991, 8, 1]
 new Date(...myArray) // object Date - équivaut à: new Date(1991, 8, 1)
 
 const myString = "foo bar"
 // les objets String étant itérables
-[...myString] // ["f", "o", "o", " ", "b", "a", "r"]
+[...myString] // ["f", "o", "o", " ", "b", "a", "r"]```
 
 
 il se dénotte de rest en pouvant se mélanger aux autres arguments d'une fonction
@@ -297,19 +297,19 @@ il se dénotte de rest en pouvant se mélanger aux autres arguments d'une foncti
 
 
 
-> const stronglyTyped = ["scala", "haskell"]
+``` const stronglyTyped = ["scala", "haskell"]
 
 // ES5
 ["go", "rust"].concat(stronglyTyped) // ["go", "rust", "scala", "haskell"]
 
 // ES6 / ES2015
-["go", "rust", ...stronglyTyped] // ["go", "rust", "scala", "haskell"]
+["go", "rust", ...stronglyTyped] // ["go", "rust", "scala", "haskell"]```
 
 **Rest parameters**
 
 représente un nombre indéfini d'arguments sous forme d'un tableau.
 
-> function sum(...theArgs) {
+``` function sum(...theArgs) {
   return theArgs.reduce((previous, current) => {
     return previous + current;
   });
@@ -319,7 +319,7 @@ console.log(sum(1, 2, 3));
 // expected output: 6
 
 console.log(sum(1, 2, 3, 4));
-// expected output: 10
+// expected output: 10```
 
 
 ##Maîtrise de la fonction##
@@ -335,7 +335,7 @@ Une fonction anonyme, permise dans certains langages de programmation, est une f
 callback=Une fonction de rappel: est une fonction passée dans une autre fonction en tant qu'argument, qui est ensuite invoquée à l'intérieur de la fonction externe pour accomplir une sorte de routine ou d'action.
 
 
-> function salutation(name) {
+``` function salutation(name) {
   alert('Bonjour ' + name);
 }
 
@@ -344,14 +344,14 @@ function processUserInput(callback) {
   callback(name);
 }
 
-processUserInput(salutation);
+processUserInput(salutation);```
 
 **Closure**
 
 Une fermeture est la paire formée d'une fonction et des références à son état environnant (l'environnement lexical). En d'autres termes, une fermeture donne accès à la portée d'une fonction externe à partir d'une fonction interne (on dit aussi que la fonction « capture son environnement »). En JavaScript, une fermeture est créée chaque fois qu'une fonction est créée.
 
 
-	function ajouteur(nombre) {
+	```function ajouteur(nombre) {
     	function ajoute(valeur) {
         	return valeur + nombre;
     	}
@@ -360,14 +360,14 @@ Une fermeture est la paire formée d'une fonction et des références à son ét
 	}
 
 var ajoute10 = ajouteur(10);
-ajoute10(1); // renvoie 11
+ajoute10(1); // renvoie 11```
 
-// ES6
+```// ES6
 
 let ajouteur =  nombre => valeur => valeur + nombre
 
 let ajoute10 = ajouteur(10);
-ajoute10(1); // renvoie 11 
+ajoute10(1); // renvoie 11 ```
 
 
 **ESLint avec un StyleGuide**
